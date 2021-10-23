@@ -226,7 +226,6 @@ GameObject:
   - component: {fileID: 535171954}
   - component: {fileID: 535171953}
   - component: {fileID: 535171952}
-  - component: {fileID: 535171955}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -299,20 +298,6 @@ Transform:
   m_Father: {fileID: 1077322484}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &535171955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535171951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a251cb4921b33c4d979b8b40f66ddf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 100
-  playerBody: {fileID: 1077322484}
 --- !u!1 &550830090
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +485,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1077322484}
   - component: {fileID: 1077322485}
+  - component: {fileID: 1077322487}
+  - component: {fileID: 1077322486}
   m_Layer: 0
   m_Name: FirstPersonPlayer
   m_TagString: Untagged
@@ -541,3 +528,30 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1077322486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077322483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce17331591058644db88d190de521cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1077322487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077322483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a251cb4921b33c4d979b8b40f66ddf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 100
+  playerBody: {fileID: 1077322484}
+  playerCamera: {fileID: 535171954}

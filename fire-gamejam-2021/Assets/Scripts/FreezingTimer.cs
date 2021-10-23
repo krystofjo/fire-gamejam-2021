@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FreezingTimer : MonoBehaviour
 {
+    public Animator transition;
+
+    public float transitionTime = 1f;
+
     public float timeLeft = 100;
+    public float freezingSpeed = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +21,28 @@ public class FreezingTimer : MonoBehaviour
     void Update()
     {
         if(timeLeft > 0) {
-            timeLeft -= Time.deltaTime;
+            timeLeft -= freezingSpeed * Time.deltaTime;
         } else {
             timeLeft = 0;
         }
+
+        if(timeLeft == 0) {
+            LoadFailure();
+        }
+
+    }
+
+    public void LoadFailure() {
+        Debug.Log("FAILED");
+        StartCoroutine(LoadNextScene(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    IEnumerator LoadNextScene(int levelIndex)
+    {
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(levelIndex);
     }
 }

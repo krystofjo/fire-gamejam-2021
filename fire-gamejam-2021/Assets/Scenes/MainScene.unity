@@ -1044,6 +1044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 7851518741385497481, guid: b9b4e4c9e56c90542857bb2168172429, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7851518741385497485, guid: b9b4e4c9e56c90542857bb2168172429, type: 3}
       propertyPath: mouseSensitivity
       value: 50

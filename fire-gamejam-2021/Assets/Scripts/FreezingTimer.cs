@@ -7,6 +7,7 @@ public class FreezingTimer : MonoBehaviour
 {
     public Animator transition;
 
+
     public float transitionTime = 1f;
 
     public float timeLeft = 100;
@@ -34,15 +35,11 @@ public class FreezingTimer : MonoBehaviour
 
     public void LoadFailure() {
         Debug.Log("FAILED");
-        StartCoroutine(LoadNextScene(SceneManager.GetActiveScene().buildIndex + 1));
+        LoadNextScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    IEnumerator LoadNextScene(int levelIndex)
+    public void LoadNextScene(int levelIndex)
     {
-        transition.SetTrigger("Start");
-
-        yield return new WaitForSeconds(transitionTime);
-
         SceneManager.LoadScene(levelIndex);
     }
 }

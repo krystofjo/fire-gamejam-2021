@@ -4,9 +4,19 @@ using UnityEngine;
 
 public class PlayerCollisionDetector : MonoBehaviour
 {
-    void OnTriggerEnter(Collider otherColider) {
+    GameObject gameManager;
+    HomePointsCounter homePointsCounter;
+
+    void Start()
+    {
+        gameManager = GameObject.Find("GameManager");
+        homePointsCounter = gameManager.GetComponent<HomePointsCounter>();
+    }
+
+    void OnTriggerEnter(Collider otherColider) 
+    {
         if(otherColider.tag == "HomePointBorder") {
-            Debug.Log("Border crossed");
+            homePointsCounter.homePoints++;
         }
     }
 

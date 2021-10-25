@@ -33,7 +33,8 @@ public class FreezingTimer : MonoBehaviour
 
     }
 
-    public void LoadFailure() {
+    public void LoadFailure() 
+    {
         Debug.Log("FAILED");
         LoadNextScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

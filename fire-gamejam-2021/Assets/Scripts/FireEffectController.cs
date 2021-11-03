@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireEffect : MonoBehaviour
+public class FireEffectController : MonoBehaviour
 {   
     public FreezingController freezingController;
     // Start is called before the first frame update
@@ -14,6 +14,7 @@ public class FireEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         
     }
 

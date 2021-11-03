@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class FreezingController : MonoBehaviour
 {
 
-    public float timeLeft = 100;
+    public float initialTime = 100;
+    public float timeLeft;
     public float freezingSpeed = 1;
     // Start is called before the first frame update
     void Start()
     {
+        timeLeft = initialTime;
         
     }
 
@@ -19,8 +21,8 @@ public class FreezingController : MonoBehaviour
     {
         if(timeLeft > 0) {
             timeLeft -= freezingSpeed * Time.deltaTime;
-            if(timeLeft > 100) {
-                timeLeft = 100;
+            if(timeLeft > initialTime) {
+                LoadWin();
             }
         } else {
             timeLeft = 0;
@@ -37,6 +39,13 @@ public class FreezingController : MonoBehaviour
         Debug.Log("FAILED");
         LoadNextScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void LoadWin() 
+    {
+        Debug.Log("Win");
+        LoadNextScene(SceneManager.GetActiveScene().buildIndex + 3);
+    }
+
 
     public void LoadNextScene(int levelIndex)
     {

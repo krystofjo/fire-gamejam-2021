@@ -389,7 +389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6236771217212468749, guid: de6f452bc164da147a342ef7281d6cdf, type: 3}
       propertyPath: m_Text
-      value: This fire will save you from frostbite for tonight.
+      value: This fire saved you from frostbite for tonight.
       objectReference: {fileID: 0}
     - target: {fileID: 6236771217212468749, guid: de6f452bc164da147a342ef7281d6cdf, type: 3}
       propertyPath: m_Color.b

@@ -27,7 +27,7 @@ public class HomePointsCounter : MonoBehaviour
     public void LoadWin() 
     {
         Debug.Log("Win");
-    LoadNextScene(SceneManager.GetActiveScene().buildIndex + 2);
+        LoadNextScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     public void LoadNextScene(int levelIndex)

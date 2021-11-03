@@ -155,8 +155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 0}
   transitionTime: 1
-  timeLeft: 20
-  freezingSpeed: 0
+  timeLeft: 10
+  freezingSpeed: 1
 --- !u!4 &46961362
 Transform:
   m_ObjectHideFlags: 0

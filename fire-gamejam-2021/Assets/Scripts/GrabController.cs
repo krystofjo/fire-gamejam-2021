@@ -26,7 +26,7 @@ public class GrabController : MonoBehaviour
             if (grabbedObject == null) {
                 grabbedObject = canGrab;
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = true; 
-                grabbedObject.transform.position = this.gameObject.transform.position;
+                grabbedObject.transform.localPosition = grabbedObject.GetComponent<GrabbableObject>().grabbedPosition;
                 grabbedObject.transform.rotation = Quaternion.Euler(grabbedObject.GetComponent<GrabbableObject>().grabbedRotation);
             }
         }

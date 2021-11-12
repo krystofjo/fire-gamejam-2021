@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HomePointBorder
   - Fire
+  - GrabbableObject
   layers:
   - Default
   - TransparentFX

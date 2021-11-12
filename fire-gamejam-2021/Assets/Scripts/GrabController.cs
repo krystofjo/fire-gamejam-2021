@@ -23,7 +23,7 @@ public class GrabController : MonoBehaviour
         if(buttonPressed == 1) {
                 Debug.Log("Can Grab" + input);
             canGrab.transform.parent = this.gameObject.transform;
-            if (grabbedObject == null) {
+            if (grabbedObject == null && canGrab != null) {
                 grabbedObject = canGrab;
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = true; 
                 grabbedObject.transform.localPosition = grabbedObject.GetComponent<GrabbableObject>().grabbedPosition;
@@ -39,6 +39,10 @@ public class GrabController : MonoBehaviour
                 grabbedObject = null;
             }
         }
-        
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        Debug.Log("TEST");
     }
 }

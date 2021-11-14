@@ -5,8 +5,10 @@ using UnityEngine;
 public class GrabController : MonoBehaviour
 {   
     public string input;
+    public bool  canGrab;
+    public GameObject objectToGrab;
     public GameObject grabbedObject;
-    public GameObject canGrab;
+
 
     public Vector3 dropPosition = new Vector3(0f, -2.5f, 5f);
     
@@ -21,10 +23,9 @@ public class GrabController : MonoBehaviour
     {
         float buttonPressed = Input.GetAxis(input);
         if(buttonPressed == 1) {
-                Debug.Log("Can Grab" + input);
-            canGrab.transform.parent = this.gameObject.transform;
-            if (grabbedObject == null && canGrab != null) {
-                grabbedObject = canGrab;
+            if (grabbedObject == null && objectToGrab != null) {
+                grabbedObject = objectToGrab;
+                objectToGrab.transform.parent = this.gameObject.transform;
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = true; 
                 grabbedObject.transform.localPosition = grabbedObject.GetComponent<GrabbableObject>().grabbedPosition;
                 grabbedObject.transform.rotation = Quaternion.Euler(grabbedObject.GetComponent<GrabbableObject>().grabbedRotation);
@@ -35,7 +36,7 @@ public class GrabController : MonoBehaviour
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = false; 
                 grabbedObject.transform.rotation = new Quaternion(0,0,0,0);
                 grabbedObject.transform.localPosition = dropPosition;
-                canGrab.transform.parent = GameObject.Find("Grabbables").transform;
+                objectToGrab.transform.parent = GameObject.Find("Grabbables").transform;
                 grabbedObject = null;
             }
         }
@@ -43,6 +44,16 @@ public class GrabController : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        Debug.Log("TEST");
+        if(collider.tag == "GrabbableObject") {
+            canGrab = true;
+            objectToGrab = collider.gameObject;
+        }
+    }
+    void OnTriggerExit(Collider collider)
+    {
+        if(collider.tag == "GrabbableObject") {
+            canGrab = false;
+            objectToGrab = null;
+        }
     }
 }

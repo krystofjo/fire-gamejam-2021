@@ -70,6 +70,7 @@ public class GrabController : MonoBehaviour
             if(objectToGrab.GetComponent<GrabbableObject>().isTinder == true)
             {   
                 gameManager.GetComponent<SparkController>().closeToTinder = true;
+                gameManager.GetComponent<SparkController>().tinder = objectToGrab;
             }
         }
     }
@@ -77,6 +78,7 @@ public class GrabController : MonoBehaviour
     {
         if(collider.tag == "GrabbableObject") { 
             gameManager.GetComponent<SparkController>().closeToTinder = false;
+            gameManager.GetComponent<SparkController>().tinder = null;
             canGrab = false;
             objectToGrab = null;
         }

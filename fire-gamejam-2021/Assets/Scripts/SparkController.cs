@@ -5,11 +5,13 @@ using UnityEngine;
 public class SparkController : MonoBehaviour
 {   
 
-    public string inputA;
-    public string inputB;
+    public string inputA = "Fire A2";
+    public string inputB = "Fire B2";
     public bool pyrite = false;
     public bool flint = false;
     public bool closeToTinder = false;
+    public GameObject tinder;
+    public GameObject fire;
     public bool sparking = false;
     // Start is called before the first frame update
     void Start()
@@ -23,20 +25,18 @@ public class SparkController : MonoBehaviour
 
         if(pyrite==true && flint==true)
         {
-            if((Input.GetAxis(inputA)==1) && (Input.GetAxis(inputB)==1))
-            {  
-                sparking = true;
-            } else sparking = false;
-
             willWork();
+
             if((Input.GetAxis(inputA)==1) && (Input.GetAxis(inputB)==1))
             {
+                sparking = true;
                 carveSpark();
-                if(closeToTinder == true)
+
+                if(closeToTinder == true && tinder!=null)
                 {
                     sparkFire();
                 }
-            }
+            } else sparking = false;
         }
     }
 
@@ -50,8 +50,11 @@ public class SparkController : MonoBehaviour
     }
 
     void sparkFire()
-    {
-        Debug.Log("FIRE!!!");
+    {   
+        Debug.Log("FIRE!");
+        Instantiate(fire, tinder.transform.position, tinder.transform.rotation);
+        closeToTinder = false;
+        tinder = null;
     }
 }
 

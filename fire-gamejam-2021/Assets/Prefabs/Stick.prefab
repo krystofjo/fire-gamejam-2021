@@ -63,7 +63,7 @@ MonoBehaviour:
   isStick: 1
   isTinder: 0
   stoneName: 
-  stickSize: 0
+  stickSize: 1
   grabbedPosition: {x: 0, y: 0, z: 0}
   grabbedRotation: {x: 0, y: 0, z: 90}
 --- !u!1 &4749463330826932544

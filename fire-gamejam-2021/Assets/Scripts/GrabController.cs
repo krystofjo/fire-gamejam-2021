@@ -8,6 +8,7 @@ public class GrabController : MonoBehaviour
     public bool  canGrab;
     public GameObject objectToGrab;
     public GameObject grabbedObject;
+    private GameObject gameManager;
 
 
     public Vector3 dropPosition = new Vector3(0f, -2.5f, 5f);
@@ -15,7 +16,7 @@ public class GrabController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
@@ -29,10 +30,29 @@ public class GrabController : MonoBehaviour
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = true; 
                 grabbedObject.transform.localPosition = grabbedObject.GetComponent<GrabbableObject>().grabbedPosition;
                 grabbedObject.transform.rotation = Quaternion.Euler(grabbedObject.GetComponent<GrabbableObject>().grabbedRotation);
+                
+
+                if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "flint") 
+                {
+                    gameManager.GetComponent<SparkController>().flint = true;
+                }
+
+                if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "pyrite") 
+                {
+                    gameManager.GetComponent<SparkController>().pyrite = true;
+                }
             }
         }
         if(buttonPressed == 0) {
             if(grabbedObject != null) {
+                if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "flint") 
+                {
+                    gameManager.GetComponent<SparkController>().flint = false;
+                }
+                if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "pyrite") 
+                {
+                    gameManager.GetComponent<SparkController>().pyrite = false;
+                }
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = false; 
                 grabbedObject.transform.rotation = new Quaternion(0,0,0,0);
                 grabbedObject.transform.localPosition = dropPosition;
@@ -47,11 +67,16 @@ public class GrabController : MonoBehaviour
         if(collider.tag == "GrabbableObject") {
             canGrab = true;
             objectToGrab = collider.gameObject;
+            if(objectToGrab.GetComponent<GrabbableObject>().isTinder == true)
+            {   
+                gameManager.GetComponent<SparkController>().closeToTinder = true;
+            }
         }
     }
     void OnTriggerExit(Collider collider)
     {
-        if(collider.tag == "GrabbableObject") {
+        if(collider.tag == "GrabbableObject") { 
+            gameManager.GetComponent<SparkController>().closeToTinder = false;
             canGrab = false;
             objectToGrab = null;
         }

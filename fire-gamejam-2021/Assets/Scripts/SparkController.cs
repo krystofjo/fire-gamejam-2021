@@ -10,6 +10,7 @@ public class SparkController : MonoBehaviour
     public bool pyrite = false;
     public bool flint = false;
     public bool closeToTinder = false;
+    public bool sparking = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,18 +23,35 @@ public class SparkController : MonoBehaviour
 
         if(pyrite==true && flint==true)
         {
-            Debug.Log("can spark");
+            if((Input.GetAxis(inputA)==1) && (Input.GetAxis(inputB)==1))
+            {  
+                sparking = true;
+            } else sparking = false;
 
-            if(closeToTinder == true)
+            willWork();
+            if((Input.GetAxis(inputA)==1) && (Input.GetAxis(inputB)==1))
             {
-                Debug.Log("CAN MAKE FIRE");
+                carveSpark();
+                if(closeToTinder == true)
+                {
+                    sparkFire();
+                }
             }
         }
     }
 
-    void canSpark()
+    void willWork()
     {
+    }
 
+    void carveSpark()
+    {
+        Debug.Log("Spark");
+    }
+
+    void sparkFire()
+    {
+        Debug.Log("FIRE!!!");
     }
 }
 

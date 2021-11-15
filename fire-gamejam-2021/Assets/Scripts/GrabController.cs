@@ -23,7 +23,7 @@ public class GrabController : MonoBehaviour
     {
         float buttonPressed = Input.GetAxis(input);
         if(buttonPressed == 1) {
-            if (grabbedObject == null && objectToGrab != null) {
+            if (grabbedObject == null && objectToGrab != null && objectToGrab.gameObject.GetComponent<GrabbableObject>().isGrabbed==false) {
                 grabbedObject = objectToGrab;
                 objectToGrab.transform.parent = this.gameObject.transform;
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = true; 
@@ -36,7 +36,7 @@ public class GrabController : MonoBehaviour
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = false; 
                 grabbedObject.transform.rotation = new Quaternion(0,0,0,0);
                 grabbedObject.transform.localPosition = dropPosition;
-                objectToGrab.transform.parent = GameObject.Find("Grabbables").transform;
+                grabbedObject.transform.parent = GameObject.Find("Grabbables").transform;
                 grabbedObject = null;
             }
         }

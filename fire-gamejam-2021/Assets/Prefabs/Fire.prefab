@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3854473488571915432}
   - component: {fileID: 4022223965443519485}
+  - component: {fileID: 2666726435455701065}
   m_Layer: 0
   m_Name: FireArea
   m_TagString: Untagged
@@ -44,6 +45,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2666726435455701065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6194142518578017025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613206b4950e843a4b59c57dd8705d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fire: {fileID: 0}
+  burnMaterial: {fileID: 2100000, guid: d9b088112e0fd46409d0340bb444446b, type: 2}
 --- !u!1 &7728523038377084187
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,17 @@ MonoBehaviour:
   fireInitialTime: 15
   fireTimeLeft: 0
   burnOutSpeed: 1
+  fireLimit1: 20
+  fireLimit2: 50
+  fireLimit3: 120
+  intensity1: 0.2
+  intensity2: 0.5
+  intensity3: 1
+  intensity4: 3
+  speed1: 1.5
+  speed2: 1
+  speed3: 0.5
+  speed4: 0.2
 --- !u!135 &7728523038377084190
 SphereCollider:
   m_ObjectHideFlags: 0

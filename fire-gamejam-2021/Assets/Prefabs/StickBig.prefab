@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749463330800305342, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
       propertyPath: m_Name
-      value: Stick Big
+      value: StickBig
       objectReference: {fileID: 0}
     - target: {fileID: 4749463330826932545, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
       propertyPath: m_LocalScale.x

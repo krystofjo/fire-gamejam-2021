@@ -51,7 +51,6 @@ public class FireController : MonoBehaviour
             {
                 fireIntesity = 0;
             } else if(fireTimeLeft<fireLimit1) {
-                Debug.Log("intensity 1");
                 fireIntesity = intensity1;
                 burnOutSpeed = speed1;
                 UpdateParticles(fireAdd, fireTimeLeft/100);
@@ -59,19 +58,16 @@ public class FireController : MonoBehaviour
             } else if(fireTimeLeft>fireLimit1 && fireTimeLeft<fireLimit2) {
                 fireIntesity = intensity2;
                 burnOutSpeed = speed2;
-                Debug.Log("intensity 2");
                 UpdateParticles(fireAdd, fireTimeLeft/100);
                 UpdateParticles(fireAlpha, fireTimeLeft/100);
             }   else if(fireTimeLeft>fireLimit2 && fireTimeLeft<fireLimit3) {
                 fireIntesity = intensity3;
                 burnOutSpeed = speed3;
-                Debug.Log("intensity 3");
                 UpdateParticles(fireAdd, fireTimeLeft/100);
                 UpdateParticles(fireAlpha, fireTimeLeft/100);
             }   else if(fireTimeLeft>fireLimit3) {
                 fireIntesity = intensity4;
                 burnOutSpeed = speed4;
-                Debug.Log("intensity 4");
                 UpdateParticles(fireAdd, fireTimeLeft/100);
                 UpdateParticles(fireAlpha, fireTimeLeft/100);
             }

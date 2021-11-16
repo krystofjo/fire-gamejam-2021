@@ -6,6 +6,7 @@ public class GrabController : MonoBehaviour
 {   
     public string input;
     public bool  canGrab;
+    public bool  isGrabbed;
     public GameObject objectToGrab;
     public GameObject grabbedObject;
     private GameObject gameManager;

@@ -59,6 +59,7 @@ public class GrabController : MonoBehaviour
                 grabbedObject.transform.parent = GameObject.Find("Grabbables").transform;
                 grabbedObject.transform.rotation = Quaternion.Euler(0,Random.Range(0f, 360f),0);
                 grabbedObject = null;
+                objectToGrab = null;
             }
         }
     }
@@ -66,7 +67,7 @@ public class GrabController : MonoBehaviour
 
     void OnTriggerStay(Collider collider)
     {
-        if(collider.tag == "GrabbableObject") {
+        if(collider.tag == "GrabbableObject" && collider.gameObject.GetComponent<GrabbableObject>().isGrabbed == false) {
             canGrab = true;
             objectToGrab = collider.gameObject;
             if(objectToGrab.GetComponent<GrabbableObject>().isTinder == true)

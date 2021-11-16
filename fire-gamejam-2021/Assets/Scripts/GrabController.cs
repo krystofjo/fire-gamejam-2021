@@ -54,9 +54,9 @@ public class GrabController : MonoBehaviour
                     gameManager.GetComponent<SparkController>().pyrite = false;
                 }
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = false; 
-                grabbedObject.transform.rotation = new Quaternion(0,0,0,0);
                 grabbedObject.transform.localPosition = dropPosition;
                 grabbedObject.transform.parent = GameObject.Find("Grabbables").transform;
+                grabbedObject.transform.rotation = Quaternion.Euler(0,Random.Range(0f, 360f),0);
                 grabbedObject = null;
             }
         }

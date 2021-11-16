@@ -18,20 +18,18 @@ public class FireEffectController : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider otherColider) 
+    void OnTriggerStay(Collider otherColider) 
     {
         float fireIntensity;
         if(otherColider.tag == "Fire") {
             fireIntensity = otherColider.gameObject.GetComponent<FireController>().fireIntesity;
-            freezingController.freezingSpeed -= fireIntensity;
+            freezingController.freezingSpeed = 1 - fireIntensity;
         }
     }
     void OnTriggerExit(Collider otherColider)
     {
-        float fireIntensity;
         if(otherColider.tag == "Fire") {
-            fireIntensity = otherColider.gameObject.GetComponent<FireController>().fireIntesity;
-            freezingController.freezingSpeed += fireIntensity;
+            freezingController.freezingSpeed = 1;
         }
     }
 }

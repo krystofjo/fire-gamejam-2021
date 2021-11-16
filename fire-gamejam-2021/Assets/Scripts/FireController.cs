@@ -47,7 +47,10 @@ public class FireController : MonoBehaviour
     }
 
     void UpdateFirePower() {
-            if(fireTimeLeft<fireLimit1) {
+            if(fireTimeLeft<=0) 
+            {
+                fireIntesity = 0;
+            } else if(fireTimeLeft<fireLimit1) {
                 Debug.Log("intensity 1");
                 fireIntesity = intensity1;
                 burnOutSpeed = speed1;

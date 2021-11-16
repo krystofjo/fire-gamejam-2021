@@ -20,8 +20,8 @@ public class PlayerLookController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float rightArrow = Input.GetAxis("Horizontal B") * mouseSensitivity * Time.deltaTime;
-        float upArrow = Input.GetAxis("Vertical B") * mouseSensitivity * Time.deltaTime;
+        float rightArrow = Input.GetAxis("Horizontal 2") * mouseSensitivity * Time.deltaTime;
+        float upArrow = Input.GetAxis("Vertical 2") * mouseSensitivity * Time.deltaTime;
 
         xRotation -= upArrow;
         xRotation = Mathf.Clamp(xRotation, -20f, 20f);

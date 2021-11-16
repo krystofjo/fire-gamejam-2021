@@ -5,8 +5,8 @@ using UnityEngine;
 public class SparkController : MonoBehaviour
 {   
 
-    public string inputA = "Fire A2";
-    public string inputB = "Fire B2";
+    public string input1 = "Button B";
+    public string input2 = "Button L";
     public bool pyrite = false;
     public bool flint = false;
     public bool closeToTinder = false;
@@ -27,7 +27,7 @@ public class SparkController : MonoBehaviour
         {
             willWork();
 
-            if((Input.GetAxis(inputA)==1) && (Input.GetAxis(inputB)==1))
+            if((Input.GetAxis(input1)==1) && (Input.GetAxis(input2)==1))
             {
                 sparking = true;
                 carveSpark();

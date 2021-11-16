@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749463330800305342, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
       propertyPath: m_Name
-      value: StickSmall
+      value: StickSmall1
       objectReference: {fileID: 0}
     - target: {fileID: 4749463330826932545, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
       propertyPath: m_LocalScale.x
@@ -100,6 +100,14 @@ PrefabInstance:
     - target: {fileID: 3536734499069482038, guid: 971174780e156a340b0abcb21b6cab7e, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536734499069482038, guid: 971174780e156a340b0abcb21b6cab7e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536734499069482038, guid: 971174780e156a340b0abcb21b6cab7e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3536734499069482038, guid: 971174780e156a340b0abcb21b6cab7e, type: 3}
       propertyPath: m_LocalPosition.x

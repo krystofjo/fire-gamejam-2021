@@ -25,16 +25,20 @@ public class FireController : MonoBehaviour
     public float speed3 = 0.5f;
     public float speed4 = 0.2f;
 
+    public ParticleSystem fireAdd;
+    public ParticleSystem fireAlpha;
+
     // Start is called before the first frame update
     void Start()
     {
         fireTimeLeft = fireInitialTime;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
         UpdateFirePower();
 
         if(fireTimeLeft > 0) {
@@ -47,18 +51,32 @@ public class FireController : MonoBehaviour
                 Debug.Log("intensity 1");
                 fireIntesity = intensity1;
                 burnOutSpeed = speed1;
+                UpdateParticles(fireAdd, fireTimeLeft/100);
+                UpdateParticles(fireAlpha, fireTimeLeft/100);
             } else if(fireTimeLeft>fireLimit1 && fireTimeLeft<fireLimit2) {
                 fireIntesity = intensity2;
                 burnOutSpeed = speed2;
                 Debug.Log("intensity 2");
+                UpdateParticles(fireAdd, fireTimeLeft/100);
+                UpdateParticles(fireAlpha, fireTimeLeft/100);
             }   else if(fireTimeLeft>fireLimit2 && fireTimeLeft<fireLimit3) {
                 fireIntesity = intensity3;
                 burnOutSpeed = speed3;
                 Debug.Log("intensity 3");
+                UpdateParticles(fireAdd, fireTimeLeft/100);
+                UpdateParticles(fireAlpha, fireTimeLeft/100);
             }   else if(fireTimeLeft>fireLimit3) {
                 fireIntesity = intensity4;
                 burnOutSpeed = speed4;
                 Debug.Log("intensity 4");
+                UpdateParticles(fireAdd, fireTimeLeft/100);
+                UpdateParticles(fireAlpha, fireTimeLeft/100);
             }
+    }
+
+    void UpdateParticles(ParticleSystem ps, float size) {
+        ParticleSystem.MainModule psMain = ps.main;
+        psMain.startSize = size;
+        psMain.startSpeed = size;
     }
 }

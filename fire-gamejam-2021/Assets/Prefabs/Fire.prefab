@@ -43,7 +43,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.6
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2666726435455701065
 MonoBehaviour:
@@ -121,6 +121,8 @@ MonoBehaviour:
   speed2: 1
   speed3: 0.5
   speed4: 0.2
+  fireAdd: {fileID: 1797074751230991010}
+  fireAlpha: {fileID: 1797074752895638485}
 --- !u!135 &7728523038377084190
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -219,10 +221,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6286193474070862298, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286193474070862298, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286193474070862298, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
 --- !u!4 &1797074752078690693 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6286193473457765117, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+  m_PrefabInstance: {fileID: 5750382452680754040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1797074751230991010 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6286193474070862298, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+  m_PrefabInstance: {fileID: 5750382452680754040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1797074752895638485 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6286193474811713709, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
   m_PrefabInstance: {fileID: 5750382452680754040}
   m_PrefabAsset: {fileID: 0}

@@ -82,12 +82,6 @@ public class GrabController : MonoBehaviour
                 canGrab = true;
                 objectToGrab = collider.gameObject;
             }
-
-            if(objectToGrab.GetComponent<GrabbableObject>().isTinder == true)
-            {   
-                gameManager.GetComponent<SparkController>().closeToTinder = true;
-                gameManager.GetComponent<SparkController>().tinder = objectToGrab;
-            }
         }
 
         if(collider.gameObject == otherHand.grabbedObject)
@@ -95,14 +89,23 @@ public class GrabController : MonoBehaviour
             canGrab = false;
             objectToGrab = null;
         }
+
+        if(collider.gameObject.name == "Tinder") {
+            gameManager.GetComponent<SparkController>().closeToTinder = true;
+            gameManager.GetComponent<SparkController>().tinder = collider.gameObject;
+        }
     }
+
     void OnTriggerExit(Collider collider)
     {
         if(collider.tag == "GrabbableObject") { 
-            gameManager.GetComponent<SparkController>().closeToTinder = false;
-            gameManager.GetComponent<SparkController>().tinder = null;
             canGrab = false;
             objectToGrab = null;
+        }
+
+        if(collider.gameObject.name == "Tinder") {
+            gameManager.GetComponent<SparkController>().closeToTinder = false;
+            gameManager.GetComponent<SparkController>().tinder = null;
         }
     }
 
@@ -114,7 +117,6 @@ public class GrabController : MonoBehaviour
 
         if(isGrabbing){
             animator.SetBool("isGrabbing", true);
-            Debug.Log("isGrabbing");
         } else {animator.SetBool("isGrabbing", false);}
 
     }

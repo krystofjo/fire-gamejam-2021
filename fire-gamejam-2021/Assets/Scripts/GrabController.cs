@@ -63,7 +63,7 @@ public class GrabController : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerStay(Collider collider)
     {
         if(collider.tag == "GrabbableObject") {
             canGrab = true;

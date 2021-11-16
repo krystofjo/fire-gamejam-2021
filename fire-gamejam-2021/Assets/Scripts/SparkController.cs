@@ -54,6 +54,7 @@ public class SparkController : MonoBehaviour
         Debug.Log("FIRE!");
         Instantiate(fire, tinder.transform.position, tinder.transform.rotation);
         closeToTinder = false;
+        Destroy(tinder);
         tinder = null;
     }
 }

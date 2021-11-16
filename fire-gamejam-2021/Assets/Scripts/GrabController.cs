@@ -62,19 +62,8 @@ public class GrabController : MonoBehaviour
         }
     }
 
+
     void OnTriggerEnter(Collider collider)
-    {
-        if(collider.tag == "GrabbableObject") {
-            canGrab = true;
-            objectToGrab = collider.gameObject;
-            if(objectToGrab.GetComponent<GrabbableObject>().isTinder == true)
-            {   
-                gameManager.GetComponent<SparkController>().closeToTinder = true;
-                gameManager.GetComponent<SparkController>().tinder = objectToGrab;
-            }
-        }
-    }
-    void OnTriggerStay(Collider collider)
     {
         if(collider.tag == "GrabbableObject") {
             canGrab = true;

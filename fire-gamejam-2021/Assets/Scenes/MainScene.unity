@@ -405,9 +405,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd9ceb8c51ad35419950e8a77920f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handAnimatorName: HAND_Left
+  otherHand: {fileID: 1040296455}
   input: Button V
   canGrab: 0
-  isGrabbed: 0
+  isGrabbing: 0
   objectToGrab: {fileID: 0}
   grabbedObject: {fileID: 0}
   dropPosition: {x: 0, y: -2.5, z: 4}
@@ -422,9 +424,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 1
-  m_Height: 4.5
+  m_Height: 3
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 1.5}
+  m_Center: {x: 0, y: 0, z: 1}
 --- !u!54 &516353623
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -470,7 +472,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.9009434, g: 0.9923341, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -526,8 +528,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534695492}
-  m_LocalRotation: {x: 0.33520648, y: -0.030012472, z: 0.6475741, w: 0.6836547}
-  m_LocalPosition: {x: -5.61, y: 16.96, z: 2.21}
+  m_LocalRotation: {x: 0.33520642, y: -0.03001237, z: 0.6475741, w: 0.68365467}
+  m_LocalPosition: {x: -6.92, y: 9.86, z: -1.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -869,9 +871,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd9ceb8c51ad35419950e8a77920f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handAnimatorName: HAND_Right
+  otherHand: {fileID: 516353621}
   input: Button K
   canGrab: 0
-  isGrabbed: 0
+  isGrabbing: 0
   objectToGrab: {fileID: 0}
   grabbedObject: {fileID: 0}
   dropPosition: {x: 0, y: -2.5, z: 5}
@@ -886,9 +890,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 1
-  m_Height: 4.5
+  m_Height: 3
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 1.5}
+  m_Center: {x: 0, y: 0, z: 1}
 --- !u!54 &1040296457
 Rigidbody:
   m_ObjectHideFlags: 0

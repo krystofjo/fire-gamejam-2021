@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class GrabController : MonoBehaviour
 {   
+    public string handAnimatorName;
+    public GrabController otherHand;
     public string input;
     public bool  canGrab;
-    public bool  isGrabbed;
+    public bool  isGrabbing;
+    private Animator animator;
     public GameObject objectToGrab;
     public GameObject grabbedObject;
     private GameObject gameManager;
@@ -18,6 +21,7 @@ public class GrabController : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager");
+        animator = GameObject.Find(handAnimatorName).GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,6 +30,8 @@ public class GrabController : MonoBehaviour
         float buttonPressed = Input.GetAxis(input);
         if(buttonPressed == 1) {
             if (grabbedObject == null && objectToGrab != null && objectToGrab.gameObject.GetComponent<GrabbableObject>().isGrabbed==false) {
+                isGrabbing = true;
+                canGrab = false;
                 grabbedObject = objectToGrab;
                 objectToGrab.transform.parent = this.gameObject.transform;
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = true; 
@@ -46,6 +52,8 @@ public class GrabController : MonoBehaviour
         }
         if(buttonPressed == 0) {
             if(grabbedObject != null) {
+                isGrabbing = false;
+
                 if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "flint") 
                 {
                     gameManager.GetComponent<SparkController>().flint = false;
@@ -62,19 +70,30 @@ public class GrabController : MonoBehaviour
                 objectToGrab = null;
             }
         }
+        UpdateAnimations();
     }
 
 
-    void OnTriggerStay(Collider collider)
+    void OnTriggerEnter(Collider collider)
     {
-        if(collider.tag == "GrabbableObject" && collider.gameObject.GetComponent<GrabbableObject>().isGrabbed == false) {
-            canGrab = true;
-            objectToGrab = collider.gameObject;
+        if(collider.tag == "GrabbableObject" && collider.gameObject.GetComponent<GrabbableObject>().isGrabbed==false && isGrabbing==false)
+        {   
+            if(collider.gameObject != otherHand.grabbedObject){
+                canGrab = true;
+                objectToGrab = collider.gameObject;
+            }
+
             if(objectToGrab.GetComponent<GrabbableObject>().isTinder == true)
             {   
                 gameManager.GetComponent<SparkController>().closeToTinder = true;
                 gameManager.GetComponent<SparkController>().tinder = objectToGrab;
             }
+        }
+
+        if(collider.gameObject == otherHand.grabbedObject)
+        {
+            canGrab = false;
+            objectToGrab = null;
         }
     }
     void OnTriggerExit(Collider collider)
@@ -85,5 +104,18 @@ public class GrabController : MonoBehaviour
             canGrab = false;
             objectToGrab = null;
         }
+    }
+
+    void UpdateAnimations() 
+    {
+        if(canGrab){
+            animator.SetBool("canGrab", true);
+        } else {animator.SetBool("canGrab", false);}
+
+        if(isGrabbing){
+            animator.SetBool("isGrabbing", true);
+            Debug.Log("isGrabbing");
+        } else {animator.SetBool("isGrabbing", false);}
+
     }
 }

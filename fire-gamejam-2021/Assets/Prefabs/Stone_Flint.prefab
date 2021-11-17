@@ -67,8 +67,8 @@ MonoBehaviour:
   stickPower: 0
   grabbedPosition: {x: 0.29, y: 0.02, z: 0.4}
   grabbedRotation: {x: 62, y: -180, z: 78}
-  grabbedPositionRight: {x: 0.25, y: 0.1, z: 0}
-  grabbedRotationRight: {x: 2.22, y: 6.2, z: 140.5}
+  grabbedPositionRight: {x: -0.13, y: 0.29, z: 0}
+  grabbedRotationRight: {x: 25.9, y: -158, z: -55.55}
 --- !u!1001 &1070383181459665694
 PrefabInstance:
   m_ObjectHideFlags: 0

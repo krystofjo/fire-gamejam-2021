@@ -8,6 +8,10 @@ TagManager:
   - Fire
   - GrabbableObject
   - Burnable
+  - HandAnchorLeft
+  - HandAnchorRight
+  - HandRight
+  - HandLeft
   layers:
   - Default
   - TransparentFX

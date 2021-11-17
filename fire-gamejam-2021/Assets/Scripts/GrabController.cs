@@ -8,13 +8,14 @@ public class GrabController : MonoBehaviour
     public bool leftHand;
     public GrabController otherHand;
     public string input;
+    public string input2;
     public bool canGrab;
     public bool isGrabbing;
     private Animator animator;
     public GameObject objectToGrab;
     public GameObject grabbedObject;
     private GameObject gameManager;
-
+    public bool isSparking; 
 
     public Vector3 dropPosition = new Vector3(0f, -2.5f, 5f);
     
@@ -28,8 +29,7 @@ public class GrabController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float buttonPressed = Input.GetAxis(input);
-        if(buttonPressed == 1) {
+        if(Input.GetAxis(input) == 1) {
             if (grabbedObject == null && objectToGrab != null && objectToGrab.gameObject.GetComponent<GrabbableObject>().isGrabbed==false) {
                 isGrabbing = true;
                 canGrab = false;
@@ -56,24 +56,45 @@ public class GrabController : MonoBehaviour
                 }
             }
         }
-        if(buttonPressed == 0) {
+        if(Input.GetAxis(input) == 0) {
             if(grabbedObject != null) {
-                isGrabbing = false;
+                DropObject();
+            }
+        }
 
-                if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "flint") 
-                {
-                    gameManager.GetComponent<SparkController>().flint = false;
+        if(Input.GetAxis(input2) == 1) 
+        { 
+            isSparking = true;
+            if(leftHand)
+            {
+                animator.SetBool("sparkDown", true);
+                if(grabbedObject!=null) {
+                grabbedObject.transform.parent = GameObject.FindGameObjectWithTag("HandAnchorLeft").transform;
                 }
-                if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "pyrite") 
-                {
-                    gameManager.GetComponent<SparkController>().pyrite = false;
+            } else {
+                animator.SetBool("sparkUp", true);
+                if(grabbedObject!=null) {
+                grabbedObject.transform.parent = GameObject.FindGameObjectWithTag("HandAnchorRight").transform;
                 }
-                grabbedObject.GetComponent<GrabbableObject>().isGrabbed = false; 
-                grabbedObject.transform.localPosition = dropPosition;
-                grabbedObject.transform.parent = GameObject.Find("Grabbables").transform;
-                grabbedObject.transform.rotation = Quaternion.Euler(0,Random.Range(0f, 360f),0);
-                grabbedObject = null;
-                objectToGrab = null;
+            }
+        }
+        if(Input.GetAxis(input2) == 0) 
+        {
+            if(leftHand)
+            {
+                animator.SetBool("sparkDown", false);
+                if(grabbedObject!=null) {
+                    grabbedObject.transform.parent = GameObject.FindGameObjectWithTag("HandLeft").transform;
+                }
+            } else {
+                animator.SetBool("sparkUp", false);
+                if(grabbedObject!=null) {
+                    grabbedObject.transform.parent = GameObject.FindGameObjectWithTag("HandRight").transform;
+                }
+            }
+            if(grabbedObject != null && isSparking) {
+                DropObject();
+                isSparking = false;
             }
         }
         // DOCASNEEE, SMAZAT
@@ -127,6 +148,27 @@ public class GrabController : MonoBehaviour
         if(isGrabbing){
             animator.SetBool("isGrabbing", true);
         } else {animator.SetBool("isGrabbing", false);}
+
+    }
+
+    void DropObject()
+    {  
+        isGrabbing = false;
+
+        if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "flint") 
+        {
+            gameManager.GetComponent<SparkController>().flint = false;
+        }
+        if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "pyrite") 
+        {
+            gameManager.GetComponent<SparkController>().pyrite = false;
+        }
+        grabbedObject.GetComponent<GrabbableObject>().isGrabbed = false; 
+        grabbedObject.transform.localPosition = dropPosition;
+        grabbedObject.transform.parent = GameObject.Find("Grabbables").transform;
+        grabbedObject.transform.rotation = Quaternion.Euler(0,Random.Range(0f, 360f),0);
+        grabbedObject = null;
+        objectToGrab = null;
 
     }
 }

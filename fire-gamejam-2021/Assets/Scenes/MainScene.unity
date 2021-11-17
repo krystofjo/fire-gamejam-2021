@@ -340,6 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handAnimatorName: HAND_Left
+  leftHand: 1
   otherHand: {fileID: 1040296455}
   input: Button V
   canGrab: 0
@@ -801,6 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handAnimatorName: HAND_Right
+  leftHand: 0
   otherHand: {fileID: 516353621}
   input: Button K
   canGrab: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrabController : MonoBehaviour
 {   
     public string handAnimatorName;
+    public bool leftHand;
     public GrabController otherHand;
     public string input;
     public bool canGrab;
@@ -34,9 +35,14 @@ public class GrabController : MonoBehaviour
                 canGrab = false;
                 grabbedObject = objectToGrab;
                 objectToGrab.transform.parent = this.gameObject.transform;
-                grabbedObject.GetComponent<GrabbableObject>().isGrabbed = true; 
-                grabbedObject.transform.localPosition = grabbedObject.GetComponent<GrabbableObject>().grabbedPosition;
-                grabbedObject.transform.localRotation = Quaternion.Euler(grabbedObject.GetComponent<GrabbableObject>().grabbedRotation);
+                grabbedObject.GetComponent<GrabbableObject>().isGrabbed = true;
+                if(leftHand) {
+                    grabbedObject.transform.localPosition = grabbedObject.GetComponent<GrabbableObject>().grabbedPosition;
+                    grabbedObject.transform.localRotation = Quaternion.Euler(grabbedObject.GetComponent<GrabbableObject>().grabbedRotation);
+                } else {
+                    grabbedObject.transform.localPosition = grabbedObject.GetComponent<GrabbableObject>().grabbedPositionRight;
+                    grabbedObject.transform.localRotation = Quaternion.Euler(grabbedObject.GetComponent<GrabbableObject>().grabbedRotationRight);
+                }
                 
 
                 if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "flint") 

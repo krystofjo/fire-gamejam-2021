@@ -148,6 +148,30 @@ PrefabInstance:
       propertyPath: grabbedRotation.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedPositionRight.x
+      value: -0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedPositionRight.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedPositionRight.z
+      value: 0.036
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedRotationRight.x
+      value: 7.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedRotationRight.y
+      value: -55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedRotationRight.z
+      value: 92
+      objectReference: {fileID: 0}
     - target: {fileID: 4749463330800305342, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
       propertyPath: m_Name
       value: StickLarge2

@@ -36,7 +36,7 @@ public class GrabController : MonoBehaviour
                 objectToGrab.transform.parent = this.gameObject.transform;
                 grabbedObject.GetComponent<GrabbableObject>().isGrabbed = true; 
                 grabbedObject.transform.localPosition = grabbedObject.GetComponent<GrabbableObject>().grabbedPosition;
-                grabbedObject.transform.rotation = Quaternion.Euler(grabbedObject.GetComponent<GrabbableObject>().grabbedRotation);
+                grabbedObject.transform.localRotation = Quaternion.Euler(grabbedObject.GetComponent<GrabbableObject>().grabbedRotation);
                 
 
                 if(grabbedObject.GetComponent<GrabbableObject>().stoneName == "flint") 
@@ -70,6 +70,9 @@ public class GrabController : MonoBehaviour
                 objectToGrab = null;
             }
         }
+        // DOCASNEEE, SMAZAT
+        //canGrab = true;
+        //isGrabbing = true;
         UpdateAnimations();
     }
 

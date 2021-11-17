@@ -13,6 +13,8 @@ public class GrabbableObject : MonoBehaviour
 
     public Vector3 grabbedPosition = new Vector3 (0, 0, 0);
     public Vector3 grabbedRotation = new Vector3(0, 0, 0);
+    public Vector3 grabbedPositionRight = new Vector3 (0, 0, 0);
+    public Vector3 grabbedRotationRight = new Vector3(0, 0, 0);
     // Start is called before the first frame update
     void Start()
     {

@@ -55,6 +55,30 @@ PrefabInstance:
       propertyPath: stickPower
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedPosition.x
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedPosition.y
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedPosition.z
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedRotation.x
+      value: -15.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedRotation.y
+      value: -74.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
+      propertyPath: grabbedRotation.z
+      value: 72
+      objectReference: {fileID: 0}
     - target: {fileID: 4749463330800305342, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
       propertyPath: m_Name
       value: StickSmall1

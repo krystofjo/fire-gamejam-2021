@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3854473488571915432}
-  - component: {fileID: 4022223965443519485}
+  - component: {fileID: 2776641897321840944}
   - component: {fileID: 2666726435455701065}
   m_Layer: 0
   m_Name: FireArea
@@ -32,8 +32,8 @@ Transform:
   m_Father: {fileID: 7728523038377084188}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &4022223965443519485
-SphereCollider:
+--- !u!136 &2776641897321840944
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -42,8 +42,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: 0.6
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2666726435455701065
 MonoBehaviour:
@@ -187,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6286193473457765117, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6286193473457765117, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
       propertyPath: m_LocalPosition.z
@@ -221,6 +222,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6286193474070862296, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286193474070862296, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286193474070862296, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6286193474070862298, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 2.5
@@ -232,6 +245,18 @@ PrefabInstance:
     - target: {fileID: 6286193474070862298, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286193474811713715, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286193474811713715, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286193474811713715, guid: 9643152b2d2f544329d6a1113035b909, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9643152b2d2f544329d6a1113035b909, type: 3}

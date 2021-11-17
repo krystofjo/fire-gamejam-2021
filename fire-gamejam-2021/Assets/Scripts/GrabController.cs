@@ -7,8 +7,8 @@ public class GrabController : MonoBehaviour
     public string handAnimatorName;
     public GrabController otherHand;
     public string input;
-    public bool  canGrab;
-    public bool  isGrabbing;
+    public bool canGrab;
+    public bool isGrabbing;
     private Animator animator;
     public GameObject objectToGrab;
     public GameObject grabbedObject;

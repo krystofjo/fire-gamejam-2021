@@ -99,8 +99,8 @@ MonoBehaviour:
   stickPower: 0
   grabbedPosition: {x: 0.49, y: 0, z: 0.11}
   grabbedRotation: {x: -65.7, y: 0, z: -53.1}
-  grabbedPositionRight: {x: -0.6, y: 0.16, z: 0.073}
-  grabbedRotationRight: {x: 114.8, y: 23.9, z: 20.57}
+  grabbedPositionRight: {x: -0.64, y: 0.2, z: 0}
+  grabbedRotationRight: {x: 143, y: 72, z: 46.3}
 --- !u!1 &3388030597482721610
 GameObject:
   m_ObjectHideFlags: 0

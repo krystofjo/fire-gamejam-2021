@@ -15388,6 +15388,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8894037006500100015, guid: f9a558f950675724eab3c9d792106fa2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e8a65c3a0b5f64648b7f3ea6504defda, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9a558f950675724eab3c9d792106fa2, type: 3}
 --- !u!4 &521857921 stripped
@@ -61894,7 +61898,7 @@ PrefabInstance:
     - target: {fileID: 4003536313070275208, guid: ac474f91a7c380f4781d547dadb288d5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d1e3d8f23e42bec47afd9f87e02102ce, type: 2}
+      objectReference: {fileID: 2100000, guid: 1f870d0c8c60b4c84b39ca57353d0738, type: 2}
     - target: {fileID: 4176069906854946729, guid: ac474f91a7c380f4781d547dadb288d5, type: 3}
       propertyPath: m_TagString
       value: HandAnchorLeft
@@ -62143,7 +62147,7 @@ PrefabInstance:
     - target: {fileID: 4003536313070275208, guid: 12effbe856daf864dbb3b7df76edba07, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d1e3d8f23e42bec47afd9f87e02102ce, type: 2}
+      objectReference: {fileID: 2100000, guid: 1f870d0c8c60b4c84b39ca57353d0738, type: 2}
     - target: {fileID: 4176069906854946729, guid: 12effbe856daf864dbb3b7df76edba07, type: 3}
       propertyPath: m_TagString
       value: HandAnchorRight

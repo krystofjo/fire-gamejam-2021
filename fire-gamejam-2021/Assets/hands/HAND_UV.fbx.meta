@@ -54,6 +54,9 @@ ModelImporter:
   - first:
       74: -2741430193155833272
     second: Grab_End
+  - first:
+      74: 2272827409185953586
+    second: SwooshDown
   externalObjects: {}
   materials:
     materialImportMode: 1

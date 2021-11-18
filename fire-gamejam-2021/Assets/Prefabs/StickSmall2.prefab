@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
       propertyPath: stickPower
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4749463330800305341, guid: 18a678aec67384f66a9c00e6404b701f, type: 3}
       propertyPath: grabbedPosition.x

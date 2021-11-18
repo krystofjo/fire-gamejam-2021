@@ -13,7 +13,9 @@ public class SparkController : MonoBehaviour
     public GameObject tinder;
     public GameObject fire;
     private GameObject spark;
-    public GameObject sparks;
+    public GameObject sparksPS;
+    private GameObject smoke;
+    public GameObject smokePS;
     public GameObject sparkEmitor;
     public bool sparking = false;
     public float sparkingTime = 0f;
@@ -40,6 +42,12 @@ public class SparkController : MonoBehaviour
 
                 if(closeToTinder == true && tinder!=null)
                 {
+                    if(sparkingTime == 0)
+                    {
+                        smoke = Instantiate(smokePS, tinder.transform.position, tinder.transform.rotation);
+                        smoke.transform.parent = tinder.transform;
+                    }
+
                     sparkingTime += 1 * Time.deltaTime;
 
                     if(sparkingTime>sparkingLimit) {
@@ -47,6 +55,9 @@ public class SparkController : MonoBehaviour
                     }
                 }
             } else {
+                if(smoke!=null){
+                    Destroy(smoke);
+                }
                 sparking = false;
                 alreadySparking = false;
                 sparkingTime = 0f;
@@ -69,7 +80,7 @@ public class SparkController : MonoBehaviour
     void carveSpark()
     {
         Debug.Log("Spark!");
-        spark = Instantiate(sparks, sparkEmitor.transform.position, sparkEmitor.transform.rotation);
+        spark = Instantiate(sparksPS, sparkEmitor.transform.position, sparkEmitor.transform.rotation);
         spark.transform.parent = sparkEmitor.transform;
     }
 

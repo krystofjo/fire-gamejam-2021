@@ -114,10 +114,10 @@ MonoBehaviour:
   fireLimit1: 20
   fireLimit2: 50
   fireLimit3: 120
-  intensity1: 0.2
-  intensity2: 0.5
-  intensity3: 1
-  intensity4: 3
+  intensity1: 0.5
+  intensity2: 1
+  intensity3: 2.5
+  intensity4: 5
   speed1: 1.5
   speed2: 1
   speed3: 0.5

@@ -16,17 +16,17 @@ MonoBehaviour:
   - gameObject: {fileID: 2005507036276103634, guid: 66f30b2d70de22144a1a9dd4d6065afa, type: 3}
     settings:
       m_Strength: 59.339622
-      m_RotationRangeMin: {x: 0, y: 360, z: 0}
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 0.8, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1.6, z: 1}
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
-      m_YScaleBool: 0
+      m_YScaleBool: 1
       m_ZScaleBool: 0
     name: Tree_1
   - gameObject: {fileID: 1667205503142256128, guid: e269cb1f55ec8734abc0caea2289e827, type: 3}
@@ -79,7 +79,7 @@ MonoBehaviour:
     name: Tree_4
   - gameObject: {fileID: 8543118544115296619, guid: c3aec8400c24c4db69078f27779e8d3b, type: 3}
     settings:
-      m_Strength: 25
+      m_Strength: 29.4
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -87,7 +87,7 @@ MonoBehaviour:
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
     name: StickLarge1
   - gameObject: {fileID: 8543118544115296619, guid: e08dc19666c72d744999b868b5d91783, type: 3}
     settings:
-      m_Strength: 15
+      m_Strength: 22
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -103,7 +103,7 @@ MonoBehaviour:
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
@@ -231,7 +231,7 @@ MonoBehaviour:
       m_UniformScale: {x: 1, y: 1}
       m_UniformBool: 0
       m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0

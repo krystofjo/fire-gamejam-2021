@@ -97,9 +97,6 @@ public class GrabController : MonoBehaviour
                 isSparking = false;
             }
         }
-        // DOCASNEEE, SMAZAT
-        //canGrab = true;
-        //isGrabbing = true;
         UpdateAnimations();
     }
 

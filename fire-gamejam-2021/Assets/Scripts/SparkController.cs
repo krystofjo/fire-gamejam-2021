@@ -12,7 +12,14 @@ public class SparkController : MonoBehaviour
     public bool closeToTinder = false;
     public GameObject tinder;
     public GameObject fire;
+    private GameObject spark;
+    public GameObject sparks;
+    public GameObject sparkEmitor;
     public bool sparking = false;
+    public float sparkingTime = 0f;
+    public float sparkingLimit = 5f;
+    public bool alreadySparking = false;
+    public Material burnMaterial;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,13 +37,28 @@ public class SparkController : MonoBehaviour
             if((Input.GetAxis(input1)==1) && (Input.GetAxis(input2)==1))
             {
                 sparking = true;
-                carveSpark();
 
                 if(closeToTinder == true && tinder!=null)
                 {
-                    sparkFire();
+                    sparkingTime += 1 * Time.deltaTime;
+
+                    if(sparkingTime>sparkingLimit) {
+                        sparkFire();
+                    }
                 }
-            } else sparking = false;
+            } else {
+                sparking = false;
+                alreadySparking = false;
+                sparkingTime = 0f;
+            }
+        }
+        if(sparking && !alreadySparking) {
+            carveSpark();
+            alreadySparking = true;
+        }
+
+        if(!sparking && sparkEmitor.gameObject.transform.childCount > 0) {
+            Destroy(spark);
         }
     }
 
@@ -46,7 +68,9 @@ public class SparkController : MonoBehaviour
 
     void carveSpark()
     {
-        Debug.Log("Spark");
+        Debug.Log("Spark!");
+        spark = Instantiate(sparks, sparkEmitor.transform.position, sparkEmitor.transform.rotation);
+        spark.transform.parent = sparkEmitor.transform;
     }
 
     void sparkFire()
@@ -54,7 +78,10 @@ public class SparkController : MonoBehaviour
         Debug.Log("FIRE!");
         Instantiate(fire, tinder.transform.position, tinder.transform.rotation);
         closeToTinder = false;
-        Destroy(tinder);
+        //Destroy(tinder);
+        tinder.transform.GetChild(0).GetChild(0).gameObject.GetComponent<MeshRenderer>().material = burnMaterial;
+        tinder.transform.GetChild(0).GetChild(1).gameObject.GetComponent<MeshRenderer>().material = burnMaterial;
+        tinder.gameObject.transform.tag = "Untagged";
         tinder = null;
     }
 }

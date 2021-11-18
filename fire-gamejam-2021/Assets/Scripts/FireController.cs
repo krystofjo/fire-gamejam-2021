@@ -50,6 +50,8 @@ public class FireController : MonoBehaviour
             if(fireTimeLeft<=0) 
             {
                 fireIntesity = 0;
+                Destroy(gameObject);
+                
             } else if(fireTimeLeft<fireLimit1) {
                 fireIntesity = intensity1;
                 burnOutSpeed = speed1;

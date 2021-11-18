@@ -46,13 +46,42 @@ MonoBehaviour:
   - {fileID: -1159055067861781747}
   - {fileID: 5070410329113029241}
   - {fileID: 8957298835980328284}
+  - {fileID: 1644000720027710254}
+  - {fileID: 5462893996884729152}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8967258850681852058}
   StringsBanks:
   - {fileID: 3335990437691565295}
-  cacheTime: 637728761631261923
+  cacheTime: 637728775235369256
   cacheVersion: 9
+--- !u!114 &1644000720027710254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/1.1 R
+  m_EditorClassIdentifier: 
+  Path: event:/1.1 R
+  Guid:
+    Data1: -570825816
+    Data2: 1137031862
+    Data3: 365505975
+    Data4: -1678770928
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5800
 --- !u!114 &3335990437691565295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,10 +97,10 @@ MonoBehaviour:
   Path: Audio/handy-companions/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637728761631261923
+  lastModified: 637728775235369256
   FileSizes:
   - Name: Desktop
-    Value: 854
+    Value: 936
   Exists: 1
 --- !u!114 &5070410329113029241
 MonoBehaviour:
@@ -100,6 +129,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 28648
+--- !u!114 &5462893996884729152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/1.1. L
+  m_EditorClassIdentifier: 
+  Path: event:/1.1. L
+  Guid:
+    Data1: -685855769
+    Data2: 1145622471
+    Data3: 747027380
+    Data4: 251359775
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2200
 --- !u!114 &8957298835980328284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,8 +198,8 @@ MonoBehaviour:
   Path: Audio/handy-companions/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637728761631242251
+  lastModified: 637728775235348987
   FileSizes:
   - Name: Desktop
-    Value: 1497536
+    Value: 1612864
   Exists: 1

@@ -13,9 +13,10 @@ public class HomePointsController : MonoBehaviour
         homePointsCounter = gameManager.GetComponent<HomePointsCounter>();
     }
 
-    void OnTriggerEnter(Collider otherColider) 
+    void OnTriggerExit(Collider otherColider) 
     {
         if(otherColider.tag == "HomePointBorder") {
+            Destroy(otherColider.gameObject);
             homePointsCounter.homePoints++;
         }
     }

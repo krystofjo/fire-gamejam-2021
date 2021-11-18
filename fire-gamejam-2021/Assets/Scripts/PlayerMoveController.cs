@@ -22,7 +22,11 @@ public class PlayerMoveController : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right *  x + transform.forward * -z;
-
         controller.Move(move * speed * Time.deltaTime);
+        SetTransformY(2f);
+    }
+
+    void SetTransformY(float n){
+    transform.position = new Vector3(transform.position.x, n, transform.position.z);
     }
 }

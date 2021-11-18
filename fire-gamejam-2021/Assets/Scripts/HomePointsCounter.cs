@@ -8,16 +8,22 @@ public class HomePointsCounter : MonoBehaviour
 
     public float homePointsNeeded = 3;
     public float homePoints = 0;
+    public GameObject cottageLight;
     
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(homePoints == homePointsNeeded-1) 
+        {
+            cottageLight.GetComponent<MeshRenderer>().enabled = true;
+        }
+
+
         if(homePoints == homePointsNeeded)
         {
             LoadWin();

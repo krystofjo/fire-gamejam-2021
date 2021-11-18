@@ -12,6 +12,7 @@ TagManager:
   - HandAnchorRight
   - HandRight
   - HandLeft
+  - Cottage
   layers:
   - Default
   - TransparentFX

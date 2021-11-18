@@ -19,7 +19,7 @@ public class HomePointsController : MonoBehaviour
     {
         if(otherColider.tag == "Player") {
             homePointsCounter.homePoints++;
-            playerMove.speed = playerMove.speed/2;
+            playerMove.speed = playerMove.speed/1.2f;
             Destroy(gameObject);
         }
     }

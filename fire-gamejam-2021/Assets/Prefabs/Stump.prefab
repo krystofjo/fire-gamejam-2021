@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5066116693023635203}
   - component: {fileID: 6731260770325326792}
   - component: {fileID: 6631625021521896861}
+  - component: {fileID: 7837443136989994397}
   m_Layer: 0
   m_Name: Stump
   m_TagString: Untagged
@@ -86,6 +87,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &7837443136989994397
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3751273834237304978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 20
+  m_Direction: 1
+  m_Center: {x: -0.14413303, y: 1.3703469, z: -0.17637283}
 --- !u!1001 &2948289973294322943
 PrefabInstance:
   m_ObjectHideFlags: 0

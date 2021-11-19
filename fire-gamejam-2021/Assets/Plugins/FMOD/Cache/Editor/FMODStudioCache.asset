@@ -1,5 +1,194 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8179958407265363727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.8. L
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.8. L
+  Guid:
+    Data1: -754666087
+    Data2: 1274918828
+    Data3: 168674472
+    Data4: 671339776
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-7206104827249192055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.2. R
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.2. R
+  Guid:
+    Data1: -848532792
+    Data2: 1235199387
+    Data3: -2044059977
+    Data4: -641155079
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &-6349465119280968781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.1. L
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.1. L
+  Guid:
+    Data1: -685855769
+    Data2: 1145622471
+    Data3: 747027380
+    Data4: 251359775
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2200
+--- !u!114 &-4923304218426661831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.4. L
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.4. L
+  Guid:
+    Data1: -591387502
+    Data2: 1319132135
+    Data3: 1422429322
+    Data4: -1654613132
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-3975009297427999707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.3. R
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.3. R
+  Guid:
+    Data1: -2024525149
+    Data2: 1100649995
+    Data3: -695240519
+    Data4: -1189058068
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4500
+--- !u!114 &-3337211432532185106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.6. L
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.6. L
+  Guid:
+    Data1: -1286628839
+    Data2: 1276499416
+    Data3: 1004802220
+    Data4: 368036142
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1875
+--- !u!114 &-3286397059366806063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.1 R
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.1 R
+  Guid:
+    Data1: -570825816
+    Data2: 1137031862
+    Data3: 365505975
+    Data4: -1678770928
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5800
 --- !u!114 &-1159055067861781747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,18 +233,111 @@ MonoBehaviour:
   - {fileID: 8967258850681852058}
   EditorEvents:
   - {fileID: -1159055067861781747}
-  - {fileID: 5070410329113029241}
   - {fileID: 8957298835980328284}
-  - {fileID: 1644000720027710254}
-  - {fileID: 5462893996884729152}
   - {fileID: 5711949405600410698}
+  - {fileID: -3337211432532185106}
+  - {fileID: 9098781152046329811}
+  - {fileID: 361346754208139888}
+  - {fileID: 170104882881650160}
+  - {fileID: 2419067288600195919}
+  - {fileID: 1149286364150091394}
+  - {fileID: -4923304218426661831}
+  - {fileID: -8179958407265363727}
+  - {fileID: 4208900644941875729}
+  - {fileID: -3975009297427999707}
+  - {fileID: -3286397059366806063}
+  - {fileID: -7206104827249192055}
+  - {fileID: -6349465119280968781}
+  - {fileID: 6042493173584015583}
+  - {fileID: 1833152612307050096}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8967258850681852058}
   StringsBanks:
   - {fileID: 3335990437691565295}
-  cacheTime: 637728844300947353
+  cacheTime: 637728860003051833
   cacheVersion: 9
+--- !u!114 &170104882881650160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.7. R
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.7. R
+  Guid:
+    Data1: -1993722010
+    Data2: 1321244906
+    Data3: 38633121
+    Data4: -1831162306
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1600
+--- !u!114 &361346754208139888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.9. R
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.9. R
+  Guid:
+    Data1: 1775119670
+    Data2: 1173954988
+    Data3: 736184731
+    Data4: -1711714074
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9770
+--- !u!114 &1149286364150091394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.5. R
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.5. R
+  Guid:
+    Data1: 459452548
+    Data2: 1182283900
+    Data3: 555722161
+    Data4: -821081095
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5500
 --- !u!114 &1644000720027710254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +356,32 @@ MonoBehaviour:
     Data2: 1137031862
     Data3: 365505975
     Data4: -1678770928
+  Banks: []
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5800
+--- !u!114 &1833152612307050096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.11. R
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.11. R
+  Guid:
+    Data1: -958560003
+    Data2: 1232145982
+    Data3: 1577929647
+    Data4: 1662907717
   Banks:
   - {fileID: 8967258850681852058}
   IsStream: 0
@@ -82,7 +390,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5800
+  Length: 5000
+--- !u!114 &2419067288600195919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.7. L
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.7. L
+  Guid:
+    Data1: -1249718424
+    Data2: 1268067553
+    Data3: 1797844381
+    Data4: 288595396
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7224
 --- !u!114 &3335990437691565295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,11 +433,38 @@ MonoBehaviour:
   Path: Audio/handy-companions/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637728844300947353
+  lastModified: 637728860003051833
   FileSizes:
   - Name: Desktop
-    Value: 972
+    Value: 1432
   Exists: 1
+--- !u!114 &4208900644941875729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.12. L
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.12. L
+  Guid:
+    Data1: -1702470758
+    Data2: 1265253069
+    Data3: 685422730
+    Data4: -1927230204
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &5070410329113029241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,8 +483,7 @@ MonoBehaviour:
     Data2: 1204185297
     Data3: 751507095
     Data4: 1875051095
-  Banks:
-  - {fileID: 8967258850681852058}
+  Banks: []
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -148,8 +509,7 @@ MonoBehaviour:
     Data2: 1145622471
     Data3: 747027380
     Data4: 251359775
-  Banks:
-  - {fileID: 8967258850681852058}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -183,7 +543,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 360
+  Length: 420
+--- !u!114 &6042493173584015583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fireAudio/1.10. R
+  m_EditorClassIdentifier: 
+  Path: event:/fireAudio/1.10. R
+  Guid:
+    Data1: 268934139
+    Data2: 1249946965
+    Data3: 1102569603
+    Data4: -1415600084
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5624
 --- !u!114 &8957298835980328284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,8 +613,35 @@ MonoBehaviour:
   Path: Audio/handy-companions/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637728844300917489
+  lastModified: 637728860003021908
   FileSizes:
   - Name: Desktop
-    Value: 1616768
+    Value: 2328288
   Exists: 1
+--- !u!114 &9098781152046329811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fire CRACKLES
+  m_EditorClassIdentifier: 
+  Path: event:/fire CRACKLES
+  Guid:
+    Data1: 1045367603
+    Data2: 1204185297
+    Data3: 751507095
+    Data4: 1875051095
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 28648

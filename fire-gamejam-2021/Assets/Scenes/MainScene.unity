@@ -55592,33 +55592,33 @@ MonoBehaviour:
   fireAudios:
   - {fileID: 1884174398448487761, guid: c72264aab78ea77448993047628b0cb5, type: 3}
   - {fileID: 3584560178549516864, guid: 519fbc2fe6f9add46b5e2d2fdac72539, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6838754924759462752, guid: 1effc5e5d0a0bd04b8ff8707382ce3d5, type: 3}
+  - {fileID: 1923001398084519446, guid: 122c8907fd2dc2440a4fc86e4679fec3, type: 3}
+  - {fileID: 3606583696513379914, guid: e3c858661e3226a42a98e84c3d2b9af7, type: 3}
+  - {fileID: 1913794046467778170, guid: d6fa34d762e1cf549981dad7804eda79, type: 3}
+  - {fileID: 5965736506974038865, guid: e284b6d1cedd6a84e966253501ea7ef5, type: 3}
+  - {fileID: 2500095188252450658, guid: 07fbffeafd8523542974b715481807ec, type: 3}
+  - {fileID: 8103877061589660211, guid: 688f1b00ec31fb7429113730f9cf2062, type: 3}
+  - {fileID: 8784979804782221698, guid: 795bf9c34fe205e43befb2990031773c, type: 3}
+  - {fileID: 461435611230993218, guid: abb0a6b1546bf02438a32effa76469d2, type: 3}
+  - {fileID: 1392114015388128909, guid: 193b68f06f0ddd746afb33412fc40f5b, type: 3}
+  - {fileID: 5731983509925853026, guid: 91c4b6955523fad4f9bb129d6204f8fc, type: 3}
+  - {fileID: 2264420232489402282, guid: d50ed12e6dab9724c855efa438a3da69, type: 3}
   fireText:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 11L
+  - 11R
+  - 12R
+  - 13R
+  - 14L
+  - 15R
+  - 16L
+  - 17L
+  - 17R
+  - 18L
+  - 19R
+  - 110R
+  - 111R
+  - 112L
   shelterAudios:
   - {fileID: 0}
   - {fileID: 0}

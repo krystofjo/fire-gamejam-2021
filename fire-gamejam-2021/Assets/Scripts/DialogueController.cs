@@ -28,13 +28,49 @@ public class DialogueController : MonoBehaviour
         if(talkTimer > 0) {
             talkTimer -= 1 * Time.deltaTime;
         }   
-        switch (startTalk)
+        switch (true)
         {
-            case "1.1.L":
+            case (startTalk==fireText[0]):
                 StartTalking(fireAudios[0], true, 2.2f);
                 break;
-            case "1.1.R":
+            case (startTalk==startTalk==fireText[1]):
                 StartTalking(fireAudios[1], false, 5.8f);
+                break;
+            case (startTalk==fireText[2]):
+                StartTalking(fireAudios[2], true, 2.5f);
+                break;
+            case (startTalk==fireText[3]):
+                StartTalking(fireAudios[3], false, 5.8f);
+                break;
+            case (startTalk==fireText[4]):
+                StartTalking(fireAudios[4], true, 2.2f);
+                break;
+            case (startTalk==fireText[5]):
+                StartTalking(fireAudios[5], false, 5.8f);
+                break;
+            case (startTalk==fireText[6]):
+                StartTalking(fireAudios[6], true, 2.2f);
+                break;
+            case (startTalk==fireText[7]):
+                StartTalking(fireAudios[7], false, 5.8f);
+                break;
+            case (startTalk==fireText[8]):
+                StartTalking(fireAudios[8], true, 2.2f);
+                break;
+            case (startTalk==fireText[9]):
+                StartTalking(fireAudios[9], false, 5.8f);
+                break;
+            case (startTalk==fireText[10]):
+                StartTalking(fireAudios[10], false, 5.8f);
+                break;
+            case (startTalk==fireText[11]):
+                StartTalking(fireAudios[11], false, 5.8f);
+                break;
+            case (startTalk==fireText[12]):
+                StartTalking(fireAudios[12], false, 5.8f);
+                break;
+            case (startTalk==fireText[13]):
+                StartTalking(fireAudios[13], false, 5.8f);
                 break;
             case null:
                 break;

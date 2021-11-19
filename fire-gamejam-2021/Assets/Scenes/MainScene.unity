@@ -55866,8 +55866,10 @@ MonoBehaviour:
   startTalk: 
   talkTimer: 0
   leftHandAnimator: {fileID: 1988205841}
+  leftHandGrabController: {fileID: 516353621}
   leftHandTransform: {fileID: 1943409126}
   rightHandAnimator: {fileID: 1839205359}
+  rightHandGrabController: {fileID: 1040296455}
   rightHandTransform: {fileID: 1046384393}
   fireAudios:
   - {fileID: 1884174398448487761, guid: c72264aab78ea77448993047628b0cb5, type: 3}

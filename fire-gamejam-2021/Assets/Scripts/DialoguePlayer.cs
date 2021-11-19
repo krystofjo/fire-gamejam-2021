@@ -9,11 +9,14 @@ public class DialoguePlayer : MonoBehaviour
     private GameObject currentAudioObject;
     private Animator currentAnimator;
     private Transform currentTransform;
+    private GrabController currentGrabController;
     private GameObject leftHand;
     private GameObject rightHand;
     public Animator leftHandAnimator;
+    public GrabController leftHandGrabController;
     public Transform leftHandTransform;
     public Animator rightHandAnimator;
+    public GrabController rightHandGrabController;
     public Transform rightHandTransform;
     public GameObject[] fireAudios;
     public string[] fireTalkCode = {"11L", "11R", "12R", "13R", "14L", "15R", "16L", "17L", "17R", "18L", "19R", "110R", "111R", "112L"};
@@ -91,12 +94,14 @@ public class DialoguePlayer : MonoBehaviour
             hand = leftHand;
             currentAnimator = leftHandAnimator;
             currentTransform = leftHandTransform;
+            currentGrabController = leftHandGrabController;
         } else {
                 hand = rightHand;
                 currentAnimator = rightHandAnimator;
                 currentTransform = rightHandTransform;
+                currentGrabController = rightHandGrabController;
         }
-
+        currentGrabController.canGrab = false;
         currentTransform.localPosition = new Vector3(currentTransform.localPosition.x, currentTransform.localPosition.y, -1.2f);
         currentAudioObject = Instantiate(audioObject, hand.transform.position, hand.transform.rotation);
         currentAudioObject.transform.parent = hand.transform;

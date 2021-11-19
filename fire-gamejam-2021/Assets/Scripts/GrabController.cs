@@ -148,7 +148,7 @@ public class GrabController : MonoBehaviour
 
     }
 
-    void DropObject()
+    public void DropObject()
     {  
         isGrabbing = false;
         grabbedObject.transform.localPosition = dropPosition;

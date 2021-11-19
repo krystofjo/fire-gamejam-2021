@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{29ea1d86-4d34-4c4a-8254-2aad43a8a88f}">
+		<property name="assetPath">
+			<value>SPARK.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.17066666666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{fc8d97d3-c835-43db-9efd-5b8f0d6b7e72}</destination>
+		</relationship>
+	</object>
+</objects>

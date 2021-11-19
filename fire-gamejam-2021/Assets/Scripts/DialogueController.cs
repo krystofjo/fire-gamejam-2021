@@ -10,7 +10,9 @@ public class DialogueController : MonoBehaviour
     private GameObject leftHand;
     private GameObject rightHand;
     public GameObject[] fireAudios;
+    public string[] fireText;
     public GameObject[] shelterAudios;
+    public string[] shelterText;
 
 
     // Start is called before the first frame update

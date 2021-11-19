@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 8967258850681852058}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -48,12 +48,13 @@ MonoBehaviour:
   - {fileID: 8957298835980328284}
   - {fileID: 1644000720027710254}
   - {fileID: 5462893996884729152}
+  - {fileID: 5711949405600410698}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8967258850681852058}
   StringsBanks:
   - {fileID: 3335990437691565295}
-  cacheTime: 637728779919885342
+  cacheTime: 637728844300947353
   cacheVersion: 9
 --- !u!114 &1644000720027710254
 MonoBehaviour:
@@ -97,10 +98,10 @@ MonoBehaviour:
   Path: Audio/handy-companions/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637728779919885342
+  lastModified: 637728844300947353
   FileSizes:
   - Name: Desktop
-    Value: 936
+    Value: 972
   Exists: 1
 --- !u!114 &5070410329113029241
 MonoBehaviour:
@@ -124,7 +125,7 @@ MonoBehaviour:
   - {fileID: 8967258850681852058}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -156,6 +157,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2200
+--- !u!114 &5711949405600410698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SPARK
+  m_EditorClassIdentifier: 
+  Path: event:/SPARK
+  Guid:
+    Data1: -1982114059
+    Data2: 1177451739
+    Data3: -2089566299
+    Data4: -1944991834
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 360
 --- !u!114 &8957298835980328284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,7 +206,7 @@ MonoBehaviour:
   - {fileID: 8967258850681852058}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -198,8 +226,8 @@ MonoBehaviour:
   Path: Audio/handy-companions/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637728779919865404
+  lastModified: 637728844300917489
   FileSizes:
   - Name: Desktop
-    Value: 1612864
+    Value: 1616768
   Exists: 1

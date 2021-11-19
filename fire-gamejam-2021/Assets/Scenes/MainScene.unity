@@ -47599,6 +47599,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 765916716}
     m_Modifications:
+    - target: {fileID: 1700130941348443609, guid: b465b56240a2249688425b17f5c7f486, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6410598929660442860, guid: b465b56240a2249688425b17f5c7f486, type: 3}
       propertyPath: m_Name
       value: HomePointBorder
@@ -54556,7 +54560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1793804326512161685, guid: 7a65e25d20bcc406b95bd67518fdf0ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4922854
+      value: 0.372
       objectReference: {fileID: 0}
     - target: {fileID: 1793804326512161685, guid: 7a65e25d20bcc406b95bd67518fdf0ad, type: 3}
       propertyPath: m_LocalPosition.y
@@ -54564,7 +54568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1793804326512161685, guid: 7a65e25d20bcc406b95bd67518fdf0ad, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.33413717
+      value: -0.368
       objectReference: {fileID: 0}
     - target: {fileID: 1793804326512161685, guid: 7a65e25d20bcc406b95bd67518fdf0ad, type: 3}
       propertyPath: m_LocalRotation.w
@@ -55583,8 +55587,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e5dd396cb9eec48915a1ebf7b6a5f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio11L: {fileID: 1884174398448487761, guid: c72264aab78ea77448993047628b0cb5, type: 3}
-  audio11R: {fileID: 3584560178549516864, guid: 519fbc2fe6f9add46b5e2d2fdac72539, type: 3}
+  startTalk: 1.1.L
+  talkTimer: 0
+  fireAudios:
+  - {fileID: 1884174398448487761, guid: c72264aab78ea77448993047628b0cb5, type: 3}
+  - {fileID: 3584560178549516864, guid: 519fbc2fe6f9add46b5e2d2fdac72539, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fireText:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  shelterAudios:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  shelterText:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!114 &1861763481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57186,7 +57238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2754798030097406069, guid: b4ad41db1699d4a349c695de01352677, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5468835
+      value: 0.144
       objectReference: {fileID: 0}
     - target: {fileID: 2754798030097406069, guid: b4ad41db1699d4a349c695de01352677, type: 3}
       propertyPath: m_LocalPosition.y
@@ -57194,7 +57246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2754798030097406069, guid: b4ad41db1699d4a349c695de01352677, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.051288795
+      value: -0.355
       objectReference: {fileID: 0}
     - target: {fileID: 2754798030097406069, guid: b4ad41db1699d4a349c695de01352677, type: 3}
       propertyPath: m_LocalRotation.w

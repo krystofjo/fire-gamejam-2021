@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{aacdcf5e-12f3-4af2-a001-31e2d7275b04}">
+		<property name="name">
+			<value>shelterAudio</value>
+		</property>
+		<relationship name="folder">
+			<destination>{62d4a6cf-454a-4ace-a7c0-7de6a822e26a}</destination>
+		</relationship>
+	</object>
+</objects>

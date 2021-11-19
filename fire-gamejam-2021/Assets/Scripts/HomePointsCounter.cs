@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class HomePointsCounter : MonoBehaviour
 {
 
-    public float homePointsNeeded = 3;
+    public float homePointsNeeded = 5;
     public float homePoints = 0;
     public GameObject cottageLight;
+    public DialogueManager dialogueManager;
     
     // Start is called before the first frame update
     void Start()
@@ -18,9 +19,20 @@ public class HomePointsCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(homePoints == 1) {
+            dialogueManager.PlayShelterTalk(3);
+        };
+        if(homePoints == 2) {
+            dialogueManager.PlayShelterTalk(4);
+        };
+        if(homePoints == 3) {
+            dialogueManager.PlayShelterTalk(5);
+        };
+
         if(homePoints == homePointsNeeded-1) 
         {
             cottageLight.GetComponent<MeshRenderer>().enabled = true;
+            dialogueManager.PlayShelterTalk(7);
         }
 
 

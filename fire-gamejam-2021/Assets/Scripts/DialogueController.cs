@@ -33,45 +33,45 @@ public class DialogueController : MonoBehaviour
         } else if(startTalk==fireText[1]){
             StartTalking(fireAudios[1], false, 5.8f);
         } else if(startTalk==fireText[2]){
-            StartTalking(fireAudios[2], true, 2.5f);
+            StartTalking(fireAudios[2], false, 2.5f);
         } else if(startTalk==fireText[3]){
-                StartTalking(fireAudios[3], false, 5.8f);
+                StartTalking(fireAudios[3], false, 4.5f);
         } else if(startTalk==fireText[4]){
-                StartTalking(fireAudios[4], true, 2.2f);
+                StartTalking(fireAudios[4], true, 2.0f);
         } else if(startTalk==fireText[5]){
-                StartTalking(fireAudios[5], false, 5.8f);
+                StartTalking(fireAudios[5], false, 5.5f);
         } else if(startTalk==fireText[6]){
-                StartTalking(fireAudios[6], true, 2.2f);
+                StartTalking(fireAudios[6], true, 1.9f);
         } else if(startTalk==fireText[7]){
-                StartTalking(fireAudios[7], false, 5.8f);
+                StartTalking(fireAudios[7], true, 1.6f);
         } else if(startTalk==fireText[8]){
-                StartTalking(fireAudios[8], true, 2.2f);
+                StartTalking(fireAudios[8], false, 7.2f);
         } else if(startTalk==fireText[9]){
-                StartTalking(fireAudios[9], false, 5.8f);
+                StartTalking(fireAudios[9], true, 1.0f);
         } else if(startTalk==fireText[10]){
-                StartTalking(fireAudios[10], false, 5.8f);
+                StartTalking(fireAudios[10], false, 9.8f);
         } else if(startTalk==fireText[11]){
-                StartTalking(fireAudios[11], false, 5.8f);
+                StartTalking(fireAudios[11], false, 5.6f);
         } else if(startTalk==fireText[12]){
-                StartTalking(fireAudios[12], false, 5.8f);
+                StartTalking(fireAudios[12], false, 5.0f);
         } else if(startTalk==fireText[13]){
-                StartTalking(fireAudios[13], false, 5.8f);
+                StartTalking(fireAudios[13], true, 4.0f);
         } else if(startTalk==shelterText[0]){
-                StartTalking(shelterAudios[0], false, 5.8f);
+                StartTalking(shelterAudios[0], false, 5.2f);
         } else if(startTalk==shelterText[1]){
-                StartTalking(shelterAudios[1], false, 5.8f);
+                StartTalking(shelterAudios[1], true, 5.6f);
         } else if(startTalk==shelterText[2]){
-                StartTalking(shelterAudios[2], false, 5.8f);
+                StartTalking(shelterAudios[2], true, 6.0f);
         } else if(startTalk==shelterText[3]){
-                StartTalking(shelterAudios[3], false, 5.8f);
+                StartTalking(shelterAudios[3], true, 6.2f);
         } else if(startTalk==shelterText[4]){
-                StartTalking(shelterAudios[4], false, 5.8f);
+                StartTalking(shelterAudios[4], true, 7.0f);
         } else if(startTalk==shelterText[5]){
-                StartTalking(shelterAudios[5], false, 5.8f);
+                StartTalking(shelterAudios[5], true, 4.5f);
         } else if(startTalk==shelterText[6]){
-                StartTalking(shelterAudios[6], false, 5.8f);
+                StartTalking(shelterAudios[6], true, 2.8f);
         } else if(startTalk==shelterText[7]){
-                StartTalking(shelterAudios[7], false, 5.8f);
+                StartTalking(shelterAudios[7], false, 2.6f);
         }
 
         if(talkTimer < 0) {

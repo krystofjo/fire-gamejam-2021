@@ -55587,7 +55587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e5dd396cb9eec48915a1ebf7b6a5f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTalk: 11L
+  startTalk: 22L
   talkTimer: 0
   fireAudios:
   - {fileID: 1884174398448487761, guid: c72264aab78ea77448993047628b0cb5, type: 3}

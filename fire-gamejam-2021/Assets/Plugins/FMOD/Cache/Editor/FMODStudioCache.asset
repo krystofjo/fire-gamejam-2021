@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-7224059623575887464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/INTRO \u2013 HUMAN"
+  m_EditorClassIdentifier: 
+  Path: "event:/INTRO \u2013 HUMAN"
+  Guid:
+    Data1: 309827630
+    Data2: 1166447464
+    Data3: -532908922
+    Data4: -1290315073
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9000
 --- !u!114 &-7206104827249192055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,12 +339,13 @@ MonoBehaviour:
   - {fileID: 2048134175497220789}
   - {fileID: 9002018364529884639}
   - {fileID: -6807484283254069124}
+  - {fileID: -7224059623575887464}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8967258850681852058}
   StringsBanks:
   - {fileID: 3335990437691565295}
-  cacheTime: 637728883163773164
+  cacheTime: 637728897873319716
   cacheVersion: 9
 --- !u!114 &170104882881650160
 MonoBehaviour:
@@ -576,10 +604,10 @@ MonoBehaviour:
   Path: Audio/handy-companions/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637728883163773164
+  lastModified: 637728897873319716
   FileSizes:
   - Name: Desktop
-    Value: 1758
+    Value: 1816
   Exists: 1
 --- !u!114 &4208900644941875729
 MonoBehaviour:
@@ -809,10 +837,10 @@ MonoBehaviour:
   Path: Audio/handy-companions/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637728883163743364
+  lastModified: 637728897873289811
   FileSizes:
   - Name: Desktop
-    Value: 2877568
+    Value: 2998336
   Exists: 1
 --- !u!114 &8984232205562110805
 MonoBehaviour:

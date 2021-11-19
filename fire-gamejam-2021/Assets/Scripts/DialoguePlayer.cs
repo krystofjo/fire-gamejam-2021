@@ -8,10 +8,13 @@ public class DialoguePlayer : MonoBehaviour
     public float talkTimer = 0;
     private GameObject currentAudioObject;
     private Animator currentAnimator;
+    private Transform currentTransform;
     private GameObject leftHand;
-    public Animator leftHandAnimator;
     private GameObject rightHand;
+    public Animator leftHandAnimator;
+    public Transform leftHandTransform;
     public Animator rightHandAnimator;
+    public Transform rightHandTransform;
     public GameObject[] fireAudios;
     public string[] fireTalkCode = {"11L", "11R", "12R", "13R", "14L", "15R", "16L", "17L", "17R", "18L", "19R", "110R", "111R", "112L"};
     public GameObject[] shelterAudios;
@@ -87,11 +90,14 @@ public class DialoguePlayer : MonoBehaviour
         if(L) {
             hand = leftHand;
             currentAnimator = leftHandAnimator;
+            currentTransform = leftHandTransform;
         } else {
                 hand = rightHand;
                 currentAnimator = rightHandAnimator;
+                currentTransform = rightHandTransform;
         }
 
+        currentTransform.localPosition = new Vector3(currentTransform.localPosition.x, currentTransform.localPosition.y, -1.2f);
         currentAudioObject = Instantiate(audioObject, hand.transform.position, hand.transform.rotation);
         currentAudioObject.transform.parent = hand.transform;
         currentAnimator.SetBool("isTalking", true);
@@ -101,6 +107,7 @@ public class DialoguePlayer : MonoBehaviour
     }
     void StopTalking() {
         currentAnimator.SetBool("isTalking", false);
+        currentTransform.localPosition = new Vector3(currentTransform.localPosition.x, currentTransform.localPosition.y, -1.8f);
         Destroy(currentAudioObject);
         talkTimer = 0;
     }

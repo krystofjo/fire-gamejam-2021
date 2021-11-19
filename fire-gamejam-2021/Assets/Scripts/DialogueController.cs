@@ -5,11 +5,13 @@ using UnityEngine;
 public class DialogueController : MonoBehaviour
 {   
     public string startTalk = null;
+    public float talkTimer = 0;
     private GameObject currentAudioObject;
     private GameObject leftHand;
     private GameObject rightHand;
-    public GameObject audio11L;
-    public GameObject audio11R;
+    public GameObject[] fireAudios;
+    public GameObject[] shelterAudios;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,12 +23,27 @@ public class DialogueController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(startTalk == "1.1.R") {
-            StartTalking(audio11R, false);
+        if(talkTimer > 0) {
+            talkTimer -= 1 * Time.deltaTime;
+        }   
+        switch (startTalk)
+        {
+            case "1.1.L":
+                StartTalking(fireAudios[0], true, 2.2f);
+                break;
+            case "1.1.R":
+                StartTalking(fireAudios[1], false, 5.8f);
+                break;
+            case null:
+                break;
+        }
+
+        if(talkTimer < 0) {
+            StopTalking();
         }
     }
 
-    void StartTalking(GameObject audioObject, bool L) {
+    void StartTalking(GameObject audioObject, bool L, float seconds) {
         GameObject hand;
         if(L) {
             hand = leftHand;
@@ -36,9 +53,11 @@ public class DialogueController : MonoBehaviour
         currentAudioObject.transform.parent = hand.transform;
 
         startTalk = null;
+        talkTimer = seconds;
     }
     void StopTalking() {
-
+        Destroy(currentAudioObject);
+        talkTimer = 0;
     }
 
 

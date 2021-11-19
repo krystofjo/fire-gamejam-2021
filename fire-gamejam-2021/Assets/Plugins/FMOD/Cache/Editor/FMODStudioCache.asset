@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2500
+--- !u!114 &-6807484283254069124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sPARK
+  m_EditorClassIdentifier: 
+  Path: event:/sPARK
+  Guid:
+    Data1: -1982114059
+    Data2: 1177451739
+    Data3: -2089566299
+    Data4: -1944991834
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 420
 --- !u!114 &-6349465119280968781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +162,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4500
+--- !u!114 &-3885739967777053013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/shelterAudio/2.3. L
+  m_EditorClassIdentifier: 
+  Path: event:/shelterAudio/2.3. L
+  Guid:
+    Data1: -286411419
+    Data2: 1274439793
+    Data3: -14971222
+    Data4: 1769692327
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6187
 --- !u!114 &-3337211432532185106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,7 +288,6 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -1159055067861781747}
   - {fileID: 8957298835980328284}
-  - {fileID: 5711949405600410698}
   - {fileID: -3337211432532185106}
   - {fileID: 9098781152046329811}
   - {fileID: 361346754208139888}
@@ -250,12 +303,21 @@ MonoBehaviour:
   - {fileID: -6349465119280968781}
   - {fileID: 6042493173584015583}
   - {fileID: 1833152612307050096}
+  - {fileID: 4657590414319599087}
+  - {fileID: 454042939506449105}
+  - {fileID: 7767577789481344365}
+  - {fileID: 1144048990505282584}
+  - {fileID: -3885739967777053013}
+  - {fileID: 8984232205562110805}
+  - {fileID: 2048134175497220789}
+  - {fileID: 9002018364529884639}
+  - {fileID: -6807484283254069124}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8967258850681852058}
   StringsBanks:
   - {fileID: 3335990437691565295}
-  cacheTime: 637728860003051833
+  cacheTime: 637728883163773164
   cacheVersion: 9
 --- !u!114 &170104882881650160
 MonoBehaviour:
@@ -311,6 +373,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9770
+--- !u!114 &454042939506449105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/shelterAudio/2.7. R
+  m_EditorClassIdentifier: 
+  Path: event:/shelterAudio/2.7. R
+  Guid:
+    Data1: -1652422389
+    Data2: 1108904444
+    Data3: 213919164
+    Data4: 1473025838
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2625
+--- !u!114 &1144048990505282584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/shelterAudio/2.4. L
+  m_EditorClassIdentifier: 
+  Path: event:/shelterAudio/2.4. L
+  Guid:
+    Data1: 1070877013
+    Data2: 1280482855
+    Data3: -1765898618
+    Data4: -752739275
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7500
 --- !u!114 &1149286364150091394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,6 +507,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &2048134175497220789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/shelterAudio/2.5. L
+  m_EditorClassIdentifier: 
+  Path: event:/shelterAudio/2.5. L
+  Guid:
+    Data1: 534797459
+    Data2: 1223188957
+    Data3: 2133352080
+    Data4: 1953125834
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4541
 --- !u!114 &2419067288600195919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,10 +576,10 @@ MonoBehaviour:
   Path: Audio/handy-companions/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637728860003051833
+  lastModified: 637728883163773164
   FileSizes:
   - Name: Desktop
-    Value: 1432
+    Value: 1758
   Exists: 1
 --- !u!114 &4208900644941875729
 MonoBehaviour:
@@ -465,6 +608,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
+--- !u!114 &4657590414319599087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/shelterAudio/2.6. L
+  m_EditorClassIdentifier: 
+  Path: event:/shelterAudio/2.6. L
+  Guid:
+    Data1: -2099961339
+    Data2: 1143885962
+    Data3: -144214123
+    Data4: 1741243151
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2800
 --- !u!114 &5070410329113029241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,8 +705,7 @@ MonoBehaviour:
     Data2: 1177451739
     Data3: -2089566299
     Data4: -1944991834
-  Banks:
-  - {fileID: 8967258850681852058}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -571,6 +740,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5624
+--- !u!114 &7767577789481344365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/shelterAudio/2.2. L
+  m_EditorClassIdentifier: 
+  Path: event:/shelterAudio/2.2. L
+  Guid:
+    Data1: -857050347
+    Data2: 1278231888
+    Data3: 970332046
+    Data4: 271031240
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6124
 --- !u!114 &8957298835980328284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,11 +809,65 @@ MonoBehaviour:
   Path: Audio/handy-companions/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637728860003021908
+  lastModified: 637728883163743364
   FileSizes:
   - Name: Desktop
-    Value: 2328288
+    Value: 2877568
   Exists: 1
+--- !u!114 &8984232205562110805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/shelterAudio/2.1. R
+  m_EditorClassIdentifier: 
+  Path: event:/shelterAudio/2.1. R
+  Guid:
+    Data1: 1980303462
+    Data2: 1109727687
+    Data3: -1396312162
+    Data4: -318465396
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5200
+--- !u!114 &9002018364529884639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/shelterAudio/2.1. L
+  m_EditorClassIdentifier: 
+  Path: event:/shelterAudio/2.1. L
+  Guid:
+    Data1: 1438432688
+    Data2: 1230464647
+    Data3: 1757330097
+    Data4: -1970359087
+  Banks:
+  - {fileID: 8967258850681852058}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5600
 --- !u!114 &9098781152046329811
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -55587,7 +55587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e5dd396cb9eec48915a1ebf7b6a5f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTalk: 1.1.L
+  startTalk: 11L
   talkTimer: 0
   fireAudios:
   - {fileID: 1884174398448487761, guid: c72264aab78ea77448993047628b0cb5, type: 3}
@@ -55620,23 +55620,23 @@ MonoBehaviour:
   - 111R
   - 112L
   shelterAudios:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7264203613823563321, guid: 93adfd31a84f1564f8c0ba0ca82d2640, type: 3}
+  - {fileID: 1265648364869039522, guid: 38b71aedd7ace6d408e87571c64c4cb5, type: 3}
+  - {fileID: 2245749890282753460, guid: 7ce78a5ed7376644bbc6afd5115f72a8, type: 3}
+  - {fileID: 1225093566606191863, guid: 87a1939b802faea48b5502d1a8803842, type: 3}
+  - {fileID: 5962042922767645526, guid: 8a2f16457fe671a4199584c0d129d7b3, type: 3}
+  - {fileID: 7011358498279850323, guid: 999b9a19858324643b57082264f6c2be, type: 3}
+  - {fileID: 8856969749721952411, guid: 5d058bc52e4a5154aa8ddc80f1e86bc5, type: 3}
+  - {fileID: 6804294684605423969, guid: 92e0a7cda78d4714185d95dcea989592, type: 3}
   shelterText:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 21R
+  - 21L
+  - 22L
+  - 23L
+  - 24L
+  - 25L
+  - 26L
+  - 27R
 --- !u!114 &1861763481
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -55567,9 +55567,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1861763482}
   - component: {fileID: 1861763481}
+  - component: {fileID: 1861763483}
   - component: {fileID: 1861763480}
   m_Layer: 0
-  m_Name: AudioManager
+  m_Name: DialogueManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55587,7 +55588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e5dd396cb9eec48915a1ebf7b6a5f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTalk: 22L
+  startTalk: 
   talkTimer: 0
   fireAudios:
   - {fileID: 1884174398448487761, guid: c72264aab78ea77448993047628b0cb5, type: 3}
@@ -55669,6 +55670,21 @@ Transform:
   m_Father: {fileID: 1077322484}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1861763483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861763479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6495f3ad934b7bd4687d0363ce0809cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePlayer: {fileID: 1861763480}
+  fireAlreadyPlayed: 0000000000000000000000000000
+  shelterAlreadyPlayed: 0000000000000000
 --- !u!1001 &1863627604
 PrefabInstance:
   m_ObjectHideFlags: 0

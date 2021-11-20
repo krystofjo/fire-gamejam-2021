@@ -20,19 +20,19 @@ public class HomePointsCounter : MonoBehaviour
     void Update()
     {
         if(homePoints == 1) {
-            dialogueManager.PlayShelterTalk(3);
+            dialogueManager.PlayTalk(17, true);
         };
         if(homePoints == 2) {
-            dialogueManager.PlayShelterTalk(4);
+            dialogueManager.PlayTalk(18,true);
         };
         if(homePoints == 3) {
-            dialogueManager.PlayShelterTalk(5);
+            dialogueManager.PlayTalk(19, true);
         };
 
         if(homePoints == homePointsNeeded-1) 
         {
             cottageLight.GetComponent<MeshRenderer>().enabled = true;
-            dialogueManager.PlayShelterTalk(7);
+            dialogueManager.PlayTalk(21, true);
         }
 
 

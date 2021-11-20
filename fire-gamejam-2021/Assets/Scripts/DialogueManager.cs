@@ -5,14 +5,12 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     public DialoguePlayer dialoguePlayer;
-    public bool[] fireAlreadyPlayed;
-    public bool[] shelterAlreadyPlayed;
-    public  string[] fireTalkCodes = {"11L", "11R", "12R", "13R", "14L", "15R", "16L", "17L", "17R", "18L", "19R", "110R", "111R", "112L"};
-    public  string[] shelterTalkCodes = {"21R", "21L", "22L", "23L", "24L", "25L", "26L", "27R"};
+    public bool[] fireAlreadyPlayed = {false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false};
     
     void Start()
     {
-        
+        StartCoroutine(PlayTalkAfterTime(2, 0, true));
+        StartCoroutine(PlayTalkAfterTime(4.5f, 1, true));
     }
 
     // Update is called once per frame
@@ -21,18 +19,19 @@ public class DialogueManager : MonoBehaviour
         
     }
 
-    public void PlayFireTalk(int index) {
+    public void PlayTalk(int index, bool withAnimation) {
         if(!fireAlreadyPlayed[index]) {
-            dialoguePlayer.startTalk = fireTalkCodes[index];
+            dialoguePlayer.StartTalking(index, withAnimation);
             fireAlreadyPlayed[index] = true;
         }
 
     }
-    public void PlayShelterTalk(int index) {
-        if(!shelterAlreadyPlayed[index]) {
-            dialoguePlayer.startTalk = shelterTalkCodes[index];
-            shelterAlreadyPlayed[index] = true;
-        }
 
+    IEnumerator PlayTalkAfterTime(float time, int index, bool withAnimation)
+    {
+        yield return new WaitForSeconds(time);
+        PlayTalk(index, withAnimation);
+        fireAlreadyPlayed[index] = true;
     }
+
 }

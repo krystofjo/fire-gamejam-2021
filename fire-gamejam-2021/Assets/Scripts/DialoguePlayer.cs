@@ -19,12 +19,11 @@ public class DialoguePlayer : MonoBehaviour
     public GrabController rightHandGrabController;
     public Transform rightHandTransform;
     public GameObject[] fireAudios;
-    public string[] fireTalkCode = {"11L", "11R", "12R", "13R", "14L", "15R", "16L", "17L", "17R", "18L", "19R", "110R", "111R", "112L"};
-    public GameObject[] shelterAudios;
-    public string[] shelterTalkCode = {"21R", "21L", "22L", "23L", "24L", "25L", "26L", "27R"};
+    public float[] fireTalkLenght = {2.2f, 5.8f, 2.5f, 4.5f, 2.0f, 5.5f, 1.9f, 1.6f, 7.2f, 1.0f, 9.8f, 5.6f, 5.0f, 4.0f, 5.2f, 5.6f, 6.0f, 6.2f, 7.0f, 4.5f, 2.8f, 2.6f};
+    public bool[] fireTalkiSLeft = {true, false, false, false, true, false, true, true, false, true, false, false, false, true, false, true, true, true, true, true, true, false};
 
 
-    // Start is called before the first frame update
+//     Start is called before the first frame update
     void Start()
     {
         leftHand = GameObject.FindGameObjectWithTag("HandLeft");
@@ -36,51 +35,6 @@ public class DialoguePlayer : MonoBehaviour
     {
         if(talkTimer > 0) {
             talkTimer -= 1 * Time.deltaTime;
-        }   
-        if (startTalk==fireTalkCode[0]){
-            StartTalking(fireAudios[0], true, 2.2f);
-        } else if(startTalk==fireTalkCode[1]){
-            StartTalking(fireAudios[1], false, 5.8f);
-        } else if(startTalk==fireTalkCode[2]){
-            StartTalking(fireAudios[2], false, 2.5f);
-        } else if(startTalk==fireTalkCode[3]){
-                StartTalking(fireAudios[3], false, 4.5f);
-        } else if(startTalk==fireTalkCode[4]){
-                StartTalking(fireAudios[4], true, 2.0f);
-        } else if(startTalk==fireTalkCode[5]){
-                StartTalking(fireAudios[5], false, 5.5f);
-        } else if(startTalk==fireTalkCode[6]){
-                StartTalking(fireAudios[6], true, 1.9f);
-        } else if(startTalk==fireTalkCode[7]){
-                StartTalking(fireAudios[7], true, 1.6f);
-        } else if(startTalk==fireTalkCode[8]){
-                StartTalking(fireAudios[8], false, 7.2f);
-        } else if(startTalk==fireTalkCode[9]){
-                StartTalking(fireAudios[9], true, 1.0f);
-        } else if(startTalk==fireTalkCode[10]){
-                StartTalking(fireAudios[10], false, 9.8f);
-        } else if(startTalk==fireTalkCode[11]){
-                StartTalking(fireAudios[11], false, 5.6f);
-        } else if(startTalk==fireTalkCode[12]){
-                StartTalking(fireAudios[12], false, 5.0f);
-        } else if(startTalk==fireTalkCode[13]){
-                StartTalking(fireAudios[13], true, 4.0f);
-        } else if(startTalk==shelterTalkCode[0]){
-                StartTalking(shelterAudios[0], false, 5.2f);
-        } else if(startTalk==shelterTalkCode[1]){
-                StartTalking(shelterAudios[1], true, 5.6f);
-        } else if(startTalk==shelterTalkCode[2]){
-                StartTalking(shelterAudios[2], true, 6.0f);
-        } else if(startTalk==shelterTalkCode[3]){
-                StartTalking(shelterAudios[3], true, 6.2f);
-        } else if(startTalk==shelterTalkCode[4]){
-                StartTalking(shelterAudios[4], true, 7.0f);
-        } else if(startTalk==shelterTalkCode[5]){
-                StartTalking(shelterAudios[5], true, 4.5f);
-        } else if(startTalk==shelterTalkCode[6]){
-                StartTalking(shelterAudios[6], true, 2.8f);
-        } else if(startTalk==shelterTalkCode[7]){
-                StartTalking(shelterAudios[7], false, 2.6f);
         }
 
         if(talkTimer < 0) {
@@ -88,8 +42,12 @@ public class DialoguePlayer : MonoBehaviour
         }
     }
 
-    void StartTalking(GameObject audioObject, bool L, float seconds) {
+    public void StartTalking(int index, bool withAnimation) {
+        GameObject audioObject = fireAudios[index];
+        float seconds = fireTalkLenght[index];
+        bool L = fireTalkiSLeft[index];
         GameObject hand;
+
         if(L) {
             hand = leftHand;
             currentAnimator = leftHandAnimator;
@@ -101,13 +59,17 @@ public class DialoguePlayer : MonoBehaviour
                 currentTransform = rightHandTransform;
                 currentGrabController = rightHandGrabController;
         }
-        currentGrabController.canGrab = false;
+
         currentTransform.localPosition = new Vector3(currentTransform.localPosition.x, currentTransform.localPosition.y, -1.2f);
         currentAudioObject = Instantiate(audioObject, hand.transform.position, hand.transform.rotation);
         currentAudioObject.transform.parent = hand.transform;
-        currentAnimator.SetBool("isTalking", true);
+        
+        if(withAnimation) {
+            currentGrabController.canGrab = false;
+            currentAnimator.SetBool("isTalking", true);
+        }
 
-        startTalk = null;
+        // startTalk = null;
         talkTimer = seconds;
     }
     void StopTalking() {
